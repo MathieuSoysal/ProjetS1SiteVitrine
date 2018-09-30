@@ -34,8 +34,10 @@ Menus & sous-menus cachés
 
 Les formations en question:
 https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 (Pour le projet en Html 5 et CSS3)
+
 https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github (Pour l'organisation)
 
 et surtout n'oublier pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.
+
 Bien-sûr rien vous oblige à utiliser la plateforme OC pour les formations, vous prenez ce que vous préféré.
