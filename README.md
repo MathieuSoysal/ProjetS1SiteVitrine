@@ -4,33 +4,33 @@ Le projet de site web pour janvier
 Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça pose problème à qqn
 
                                       ______________________________________________
-Les critères principal sur le quelle nous serons noté sont:
+# Les critères principal sur le quelle nous serons noté sont:
 
-Structuration HTML5 *(nav article header ...)*
+- Structuration HTML5 *(nav article header ...)*
 
-validation HTML5 & CSS3
+- validation HTML5 & CSS3
 
-Encodage des caractères *(UTF8)*
+- Encodage des caractères *(UTF8)*
 
-Variétés balises utilisés *(p, listes, img, a, h1, em, cite, tableaux, address, figure)*
+- Variétés balises utilisés *(p, listes, img, a, h1, em, cite, tableaux, address, figure)*
 
-Formulaires *(Utiliser pleins de champs différents, vérifier, donner des exemples)*
+- Formulaires *(Utiliser pleins de champs différents, vérifier, donner des exemples)*
 
-Ne pas abuser de la balise br *(Plutôt structurer en paragraphe)*
+- Ne pas abuser de la balise br *(Plutôt structurer en paragraphe)*
 
-Impression générale
+- Impression générale
 
-Plusieurs fontes importés avec fallback
+- Plusieurs fontes importés avec fallback
 
-Complexité des sélecteurs CSS
+- Complexité des sélecteurs CSS
 
-Maitrise des différentes propriétés de flex
+- Maitrise des différentes propriétés de flex
 
-Responsive design *(menu burger, mises en page qui changent)*
+- Responsive design *(menu burger, mises en page qui changent)*
 
-Infographie
+- Infographie
 
-Menus & sous-menus cachés
+- Menus & sous-menus cachés
 
 Les formations en question:
 
