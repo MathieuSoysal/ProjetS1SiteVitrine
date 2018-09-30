@@ -16,7 +16,7 @@ Variétés balises utilisés
 
 Formulaires
 
-Ne pas abuser de <br>
+Ne pas abuser de la balise br
 
 Impression générale
 
