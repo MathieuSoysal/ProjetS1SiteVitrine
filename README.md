@@ -37,7 +37,7 @@ https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-av
 
 https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github (Pour l'organisation)
 
-et surtout n'oublier pas la formation GitHub et Git avant tout !
+Surtout n'oublier pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.
 
 Bien-sûr rien vous oblige à utiliser la plateforme OC pour les formations, vous prenez ce que vous préféré.
