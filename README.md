@@ -6,17 +6,17 @@ Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça 
                                       ______________________________________________
 Les critères principal sur le quelle nous serons noté sont:
 
-Structuration HTML5
+Structuration HTML5 *(nav article header ...)*
 
 validation HTML5 & CSS3
 
-Encodage des caractères
+Encodage des caractères *(UTF8)*
 
-Variétés balises utilisés
+Variétés balises utilisés *(p, listes, img, a, h1, em, cite, tableaux, address, figure)*
 
-Formulaires
+Formulaires *(Utiliser pleins de champs différents, vérifier, donner des exemples)*
 
-Ne pas abuser de la balise br
+Ne pas abuser de la balise br *(Plutôt structurer en paragraphe)*
 
 Impression générale
 
@@ -26,7 +26,7 @@ Complexité des sélecteurs CSS
 
 Maitrise des différentes propriétés de flex
 
-Responsive design
+Responsive design *(menu burger, mises en page qui changent)*
 
 Infographie
 
@@ -34,9 +34,9 @@ Menus & sous-menus cachés
 
 Les formations en question:
 
-https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 (Pour le projet en Html 5 et CSS3)
+https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 *(Pour le projet en Html 5 et CSS3)*
 
-https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github (Pour l'organisation)
+https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github *(Pour l'organisation)*
 
 Surtout n'oublier pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.
