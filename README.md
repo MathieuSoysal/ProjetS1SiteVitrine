@@ -4,7 +4,7 @@ Le projet de site web pour janvier
 Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça pose problème à qqn
 
                                       ______________________________________________
-# Les critères principal sur le quelle nous serons noté sont:
+# Les critères principaux sur lesquels nous serons noté sont:
 
 - Structuration HTML5 *(nav article header ...)*
 
