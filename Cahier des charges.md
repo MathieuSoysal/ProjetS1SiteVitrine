@@ -6,6 +6,7 @@ Deja voici les contraintes initiales:
 Si vous êtes d'accord de créer le site web Maçon, marquez votre nom:
 - Mathieu LAGNY
 - Mathieu SOYSAL
+- Charly ECREMENT
 
 Je propose que nous commençions par créer le HTML pour les pages nécéssaires, avec l'architecture vue en cours,
 body
