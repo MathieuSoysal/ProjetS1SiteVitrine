@@ -39,41 +39,76 @@
 
 		<main>
 			<article>
-				<h2> Inscription </h2>
-				<form action="sendToMySecondYearInIut.php" method="post">
+				<h2> Contactez-nous </h2>
+				<form action="sendToMyRequest.php" method="post">
 					<fieldset>
+						<legend>Informations Personelles</legend>
 						<div>
 							<label for="surname">Nom*</label>
-							<input id="surname" name="uname" type="text" 
-							placeholder="Emma"required>
+							<input id="surname" name="uname" type="text"
+							placeholder="Pierre"required autofocus>
 						</div>
 
 						<div>
 							<label for="name">Prenom</label>
-							<input id="name" name="firstname" type="text" placeholder="Martin">
+							<input id="name" name="firstname" type="text" placeholder="Teissier">
 						</div>
-						
+
+						<div>
+							<label for="male">H</label>
+							<input id="male" name="gender" type="radio" value="male">
+							<label for="female">F</label>
+							<input id="female" name="gender" type="radio" value="female">
+						</div>
+
 						<div>
 							<label for="mail">Email*</label>
 							<input id="mail" name="email" type="email" placeholder="yourmail@domain.com" required>
 						</div>
 
 						<div>
-							<label for="male">Homme</label>
-							<input id="male" name="gender" type="radio" value="male">
-							<label for="female">Femme</label>
-							<input id="female" name="gender" type="radio" value="female">
-							<label for="other">Autre</label>
-							<input id="other" name="gender" type="radio" value="other">
+							<label for="CP">Prenom</label>
+							<input id="CP" name="CP" type="number" placeholder="34000">
 						</div>
-
+					
 						<div>
-							<label for="birth">Date de Naissance</label>
-							<input id="birth" name="birthdate" type="date">
+							<label for="pays">Pays</label>
+							<select id="pays">
+								<option value="US">U.S.A</option>
+								<option value="FR" selected>France</option>
+								<option value="CN">Chine</option>
+								<option value="VN">Viêt Nam</option>
+							</select>
 						</div>
-
-
 					</fieldset>
+
+					<fieldset>
+						<legend>Vous avez entendu parler de nous via ?</legend>
+						<div>
+							<label for="V1">Internet</label>
+							<input id="V1" name="via" type="checkbox">
+							<label for="V2">Radio</label>
+							<input id="V2" name="via" type="checkbox">
+							<label for="V3">Bouche à oreille</label>
+							<input id="V3" name="via" type="checkbox">
+							<label for="V4">Journaux</label>
+							<input id="V4" name="via" type="checkbox">
+							<label for="V5">Bouche à oreille</label>
+							<input id="V5" name="via" type="checkbox">
+							<label for="V6">Autre</label>
+							<input id="V6" name="via" type="checkbox">
+						</div>
+					</fieldset>
+					
+					<div>
+						<label for="contactDate">Date à laquelle vous voulez être recontacté</label>
+						<input id="contactDate" name="ContactDate" type="date">
+					</div>
+
+					<label for="message">Votre message</label>
+					<textarea id="message" placeholder="Posez votre question ou ecrivez votre message"></textarea><br>
+					<input type="submit" value="Envoyer">
+				</form>
 			</article>
 		</main>
 
