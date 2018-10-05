@@ -6,7 +6,7 @@ body {
 	background-color: #838892;
 	width:900px;
 	line-height: 150%;
-	text-align: center;
+	text-align: left;
 	display: flex;
 	flex-direction: column;
 }
@@ -35,6 +35,14 @@ a:visited {
 }
 a:hover {
 	color: blue;
+}
+#banniere_image {
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
 }
 nav {
 	text-align: center;
@@ -102,4 +110,7 @@ div:hover > .puce {
 textarea {
 	height: 45px;
 	width: 40%;
+}
+footer {
+	background-color: #5BBDBF
 }
