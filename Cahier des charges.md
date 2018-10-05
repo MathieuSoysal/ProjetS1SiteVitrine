@@ -24,3 +24,11 @@ Je propose que nous nous formions tous à l'utilisation de git et GitHub, je pen
 Un lien vers une formation d’open classroom sur git et github : https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github
 
 Pour la disposition du site web je pense que nous pourrions commencer avec une disposition basique comme celui vue en court puis de le modifier de façon à ce qu'il correspond aux thèmes de la fluidité, dynamisme (responsive) et surtout qu'il y ai de l'ergonomie.
+
+ # conseil du professeur :
+ - Code indentation *(alignement tablutation)*
+ - #.html avoir des nom de page le plus représentatif possible
+ - Forms, css files, flex-design
+ - Utilisé au minimum les balises vue en cours
+ - Ne pas utilisé table pour modelé l'affichage du site web
+ - Toujours Validé le code html
