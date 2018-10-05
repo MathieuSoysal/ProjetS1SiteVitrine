@@ -1,0 +1,105 @@
+@font-face {
+    font-family: kurale;
+    src: url("./fonts/kurale/kurale-regular.otf");
+}
+body {
+	background-color: #838892;
+	width:900px;
+	line-height: 150%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+h3 {
+  font-style: italic;
+  color: blue;
+  margin: 1em;
+  border: 1px;
+  border-style: solid;
+  border-color: #CCCCCC;
+}
+h2 {
+	text-align: center;
+	font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
+	margin: 10px 0px;
+}
+p {
+	text-indent: 5px;
+	margin: 30px 0px;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: #0088FF;
+}
+a:hover {
+	color: blue;
+}
+nav {
+	text-align: center;
+	margin: 0 auto;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-end; /* visuelement plus satisfaisant centre, je pense */
+}
+nav > div {
+	background-color: #5BBDBF;
+	display: inline;
+}
+nav a {
+	padding: 0px 10px;
+	border-left: 2px black;
+	border-left-style: solid; 
+}
+nav > div:first-child > a {
+	border-left: 0px;
+}
+nav div {
+	width: 130px;
+	display: inline;
+	align-items: center;
+}
+.submenu {
+	position: absolute;
+	margin-left: 0px;
+	background-color: #aca;
+	display: flex;
+	visibility: hidden;
+	flex-direction: column;
+}
+.posdiv {
+	position: relative;
+}
+div:hover > .submenu {
+	visibility: visible;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+}
+main {
+	display: flex;
+}
+article {
+	width: 60%;
+	background-color: #CCC;
+}
+aside {
+	width: 30%;
+	margin-left: 10%;
+	background-color: #CCC;
+}
+.puce {
+	visibility: hidden;
+}
+div:hover > .puce {
+	visibility: visible;
+}
+textarea {
+	height: 45px;
+	width: 40%;
+}

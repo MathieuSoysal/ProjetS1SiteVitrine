@@ -39,7 +39,41 @@
 
 		<main>
 			<article>
+				<h2> Inscription </h2>
+				<form action="sendToMySecondYearInIut.php" method="post">
+					<fieldset>
+						<div>
+							<label for="surname">Nom*</label>
+							<input id="surname" name="uname" type="text" 
+							placeholder="Emma"required>
+						</div>
 
+						<div>
+							<label for="name">Prenom</label>
+							<input id="name" name="firstname" type="text" placeholder="Martin">
+						</div>
+						
+						<div>
+							<label for="mail">Email*</label>
+							<input id="mail" name="email" type="email" placeholder="yourmail@domain.com" required>
+						</div>
+
+						<div>
+							<label for="male">Homme</label>
+							<input id="male" name="gender" type="radio" value="male">
+							<label for="female">Femme</label>
+							<input id="female" name="gender" type="radio" value="female">
+							<label for="other">Autre</label>
+							<input id="other" name="gender" type="radio" value="other">
+						</div>
+
+						<div>
+							<label for="birth">Date de Naissance</label>
+							<input id="birth" name="birthdate" type="date">
+						</div>
+
+
+					</fieldset>
 			</article>
 		</main>
 
