@@ -31,3 +31,4 @@ Pour la disposition du site web je pense que nous pourrions commencer avec une d
  - Forms, css files, flex-design
  - Utilisé au minimum les balises vue en cours
  - Ne pas utilisé table pour modelé l'affichage du site web
+ - Toujours Validé le code html
