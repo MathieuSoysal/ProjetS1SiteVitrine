@@ -32,7 +32,9 @@ Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça 
 
 - Menus & sous-menus cachés
 
-Les formations en question:
+- Des conseils sont mit à disposition dans la partie "Cahier des charges"
+
+ # Les formations en question:
 
 https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 *(Pour le projet en Html 5 et CSS3)*
 
