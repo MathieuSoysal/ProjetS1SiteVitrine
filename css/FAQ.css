@@ -1,41 +1,11 @@
-
-body {
-	background-color: #838892;
-	width:900px;
-	line-height: 150%;
-
-	flex-direction: column;
-}
-
 article{
   background-color:#CCC;
-
-}
-
-@font-face {
-    font-family: kurale;
-    src: url("./fonts/kurale/kurale-regular.otf");
-}
-body {
-  background-color: #838892;
-  width:900px;
-  line-height: 150%;
-  text-align: left;
-
-
-}
-h3 {
-  font-style: italic;
-  color: blue;
-  margin: 1em;
-  border: 1px;
-  border-style: solid;
-  border-color: #CCCCCC;
 }
 h2 {
   text-align: center;
   font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
   margin: 10px 0px;
+  background-color: 
 }
 p {
   text-indent: 5px;
