@@ -3,7 +3,7 @@ Propositions pour la création et l'amélioration de notre Projet :
 Deja voici les contraintes initiales:
 - http://romainlebreton.github.io/ProgWeb-HTMLCSS/projet.html
 
-Si vous êtes d'accord de créer le site web Maçon, marquez votre nom:
+Si vous êtes d'accord pour créer le site web Maçon, marquez votre nom:
 - Mathieu LAGNY
 - Mathieu SOYSAL
 - Charly ECREMENT
