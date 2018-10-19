@@ -32,11 +32,13 @@ Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça 
 
 - Menus & sous-menus cachés
 
-Les formations en question:
+- Des conseils sont mit à disposition dans la partie "Cahier des charges"
 
-https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 *(Pour le projet en Html 5 et CSS3)*
+ # Les formations en question:
 
-https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github *(Pour l'organisation)*
+ - https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3 *(Pour l'Html 5 et CSS3)*
+
+ - https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github *(Pour l'organisation)*
 
 Surtout n'oublier pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.

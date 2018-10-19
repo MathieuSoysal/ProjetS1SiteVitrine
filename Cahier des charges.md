@@ -3,7 +3,7 @@ Propositions pour la création et l'amélioration de notre Projet :
 Deja voici les contraintes initiales:
 - http://romainlebreton.github.io/ProgWeb-HTMLCSS/projet.html
 
-Si vous êtes d'accord de créer le site web Maçon, marquez votre nom:
+Si vous êtes d'accord pour créer le site web Maçon, marquez votre nom:
 - Mathieu LAGNY
 - Mathieu SOYSAL
 - Charly ECREMENT
@@ -15,8 +15,6 @@ body
     article
     aside
   footer
-
-Mathieu SOYSAL, je te laisse voir pour le contenu et la disposition des éléments avec ton père, fait des schéma rapides sur une feuille et montre-les à ton père, si tu veux notre avis communique-les nous également.
 
 Je pense qu'il faut rester sur une structure classique et s'inspirer d'exemples existants. Il peut être intéréssant de consulter des informations sur le marketing pour sites web.
 
@@ -31,4 +29,9 @@ Pour la disposition du site web je pense que nous pourrions commencer avec une d
  - Forms, css files, flex-design
  - Utilisé au minimum les balises vue en cours
  - Ne pas utilisé table pour modelé l'affichage du site web
- - Toujours Validé le code html
+ - Toujours Valider le code html
+
+ # prise en charge des projets:
+ *Si vous comptez migré vers un autre projet pour une longue période, merci de le précisé ci-dessous*
+  - index Disagn (Mathieu Soysal)
+  - [page choisi] [travail choisi (Architecture/mise en page/disagn/etc)] [Prenom et nom]
