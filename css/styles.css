@@ -5,6 +5,9 @@
 main {
 	display: flex;
 }
+.faq main {
+	display: inline;
+}
 body {
 	background-color: white;
 	width:98%;
