@@ -6,7 +6,7 @@ main {
 	display: flex;
 }
 body {
-	background-color: green;
+	background-color: white;
 	width:98%;
 	line-height: 150%;
 	text-align: left;
@@ -19,7 +19,7 @@ header {
 }
 nav {
 	text-align: center;
-	background-color: red;
+	background-color: blue;
 	margin-top: 200px;
 	height: 50px;
 	display: flex;
@@ -93,19 +93,23 @@ p {
 }
 a {
 	text-decoration: none;
+	color: yellow;
 }
 a:visited {
-	color: #0088FF;
+	color: #EEEEEE;
 }
 a:hover {
-	color: blue;
+	color: white;
 }
 textarea {
 	height: 45px;
 	width: 40%;
 }
+li{
+  margin-left: 20px;
+}
 footer {
-	background-color: red;
+	background-color: blue;
 	display: flex;
 	justify-content: center;
 	height: 50px;
@@ -114,4 +118,53 @@ footer div {
 	display: flex;
 	align-items: center;
 	padding: 0px 20px;
+}
+.menu-accordeon {
+  padding:0;
+  list-style:none;
+  text-align: center;
+  width: 180px;
+}
+.menu-accordeon ul {
+  padding:0;
+}
+.menu-accordeon li {
+   background-color:#727272; 
+   background-image:-webkit-linear-gradient(top, #727272 0%, #727272 100%);
+   background-image: linear-gradient(to bottom, #727272 0%, #727272 100%);
+   margin-bottom:10px;
+   border:solid 10% #727272
+}
+.menu-accordeon li li {
+   max-height:0;
+   overflow: hidden;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+.menu-accordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+.menu-accordeon ul li a, #menu-accordeon li:hover li a {
+  font-size:1em
+}
+.menu-accordeon li:hover {
+   background: #729EBF
+}
+.menu-accordeon li li:hover {
+   background: #999;
+}
+.menu-accordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+.menu-accordeon li:hover li {
+  max-height: 15em;
 }

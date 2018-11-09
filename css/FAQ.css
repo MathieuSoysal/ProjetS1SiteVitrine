@@ -1,44 +1,33 @@
-article{
-  background-color:#CCC;
+@font-face {
+    font-family: kurale;
+    src: url("./fonts/kurale/kurale-regular.otf");
 }
-h2 {
-  text-align: center;
-  font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
-  margin: 10px 0px;
-  background-color: 
+main {
+  display: flex;
 }
-p {
-  text-indent: 5px;
-  margin: 30px 0px;
+body {
+  background-color: white;
+  width:98%;
+  line-height: 150%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: #0088FF;
-}
-a:hover {
-  color: blue;
-}
-#banniere_image {
-    margin-top: 15px;
-    height: 200px;
-    border-radius: 5px;
-    position: relative;
-    box-shadow: 0px 4px 4px #1c1a19;
-    margin-bottom: 25px;
+header {
+  display: flex;
+  flex-direction: column;
 }
 nav {
   text-align: center;
-  margin: 0 auto;
+  background-color: blue;
+  margin-top: 200px;
   height: 50px;
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  justify-content: flex-end; /* visuelement plus satisfaisant centre, je pense */
+  justify-content: center;
 }
 nav > div {
-
   display: inline;
 }
 nav a {
@@ -50,39 +39,25 @@ nav > div:first-child > a {
   border-left: 0px;
 }
 nav div {
-
   display: inline;
   align-items: center;
 }
-.submenu {
-  position: absolute;
-  margin-left: 0px;
-  background-color: #aca;
-  display: flex;
-  visibility: hidden;
-  flex-direction: column;
+nav a:visited {
+  color: white;
 }
 .posdiv {
   position: relative;
 }
+.submenu {
+  position: absolute;
+  margin-left: 0px;
+  background-color: gold;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+}
 div:hover > .submenu {
   visibility: visible;
-}
-header {
-  display: flex;
-  flex-direction: column;
- background: #729EBF
-  margin-bottom: 20px; 
-}
-
-li{
-  margin-left: 20px;
-
-}
-aside {
-  width: 30%;
-  margin-left: 10%;
-  background-color: #CCC;
 }
 .puce {
   visibility: hidden;
@@ -90,19 +65,60 @@ aside {
 div:hover > .puce {
   visibility: visible;
 }
+article {
+  width: 64%;
+  background-color: #CCC;
+}
+aside {
+  width: 34%;
+  margin-left: 2%;
+  background-color: #CCC;
+}
+h2 {
+  text-align: center;
+  font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
+  margin: 10px 0px;
+}
+h3 {
+  font-style: italic;
+  color: blue;
+  margin: 1em;
+  border: 1px;
+  border-style: solid;
+  border-color: #CCCCCC;
+}
+p {
+  text-indent: 5px;
+  margin: 30px 0px;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+}
+a:visited {
+  color: #EEEEEE;
+}
+a:hover {
+  color: white;
+}
 textarea {
   height: 45px;
   width: 40%;
 }
+li{
+  margin-left: 20px;
+}
 footer {
-  background-color: #5BBDBF
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  height: 50px;
 }
-
-
-#3 {
-    background-color: #5BBDBF
+footer div {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
 }
-
 #menu-accordeon {
   padding:0;
   margin:0;
