@@ -11,38 +11,22 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-header {
-	display: flex;
-	flex-direction: column;
-	box-shadow: 3px 3px 6px black;
-}
 nav {
 	text-align: center;
-	background-color: blue;
+	background-color: #FFFFCC;
 	margin-top: 200px;
+	box-shadow: 3px 3px 6px black;
 	height: 50px;
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	justify-content: center;
-}
-nav > div {
-	display: inline;
+	justify-content: space-between;
 }
 nav a {
 	padding: 0px 10px;
-	border-left: 2px black;
-	border-left-style: solid; 
-}
-nav > div:first-child > a {
-	border-left: 0px;
-}
-nav div {
-	display: inline;
-	align-items: center;
 }
 nav a:visited {
-	color: white;
+	color: black;
 }
 .posdiv {
 	position: relative;
