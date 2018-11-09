@@ -2,10 +2,6 @@
     font-family: kurale;
     src: url("./fonts/kurale/kurale-regular.otf");
 }
-main {
-	display: flex;
-	flex-direction: column;
-}
 body {
 	background-color: white;
 	width:98%;
@@ -66,9 +62,19 @@ div:hover > .submenu {
 div:hover > .puce {
 	visibility: visible;
 }
+main {
+	display: flex;
+	flex-direction: column;
+}
 article {
 	width: 64%;
 	background-color: #CCC;
+}
+article img {
+	width: 50%;
+	height: 90%;
+	display: flex;
+	align-items: center;
 }
 aside {
 	width: 34%;
