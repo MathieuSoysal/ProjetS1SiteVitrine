@@ -20,10 +20,12 @@ nav {
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	align-items: center;
 }
 nav a {
 	padding: 0px 10px;
+	margin: ;
 }
 nav a:visited {
 	color: black;
