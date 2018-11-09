@@ -3,44 +3,30 @@
     src: url("./fonts/kurale/kurale-regular.otf");
 }
 body {
-	background-color: white;
+	background-image: url("../images/fondCiel.jpg");
+	background-attachment: fixed;
 	width:98%;
 	line-height: 150%;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
 }
-header {
-	display: flex;
-	flex-direction: column;
-}
 nav {
 	text-align: center;
-	background-color: blue;
+	background-color: #FFFFCC;
 	margin-top: 200px;
+	box-shadow: 3px 3px 6px black;
 	height: 50px;
 	display: flex;
 	flex-direction: row;
 	align-items: stretch;
-	justify-content: center;
-}
-nav > div {
-	display: inline;
+	justify-content: space-between;
 }
 nav a {
 	padding: 0px 10px;
-	border-left: 2px black;
-	border-left-style: solid; 
-}
-nav > div:first-child > a {
-	border-left: 0px;
-}
-nav div {
-	display: inline;
-	align-items: center;
 }
 nav a:visited {
-	color: white;
+	color: black;
 }
 .posdiv {
 	position: relative;
@@ -67,20 +53,30 @@ main {
 	flex-direction: column;
 }
 article {
+<<<<<<< HEAD
 	width: 64%;
 	background-color: #C5C5C533;
 	color: white;
+=======
+	margin: 1%;
+	background-color: white;
+	box-shadow: 0px 3px 6px black;
+}
+main :hover {
+	box-shadow: 3px 6px 6px black;
+}
+main>article :hover{
+	box-shadow: none;
+>>>>>>> f2fefa382e5fe65ff9da913fc4261b104dbf99ba
 }
 article img {
-	width: 50%;
+	width: 30%;
 	height: 90%;
 	display: flex;
-	align-items: center;
-}
-aside {
-	width: 34%;
-	margin-left: 2%;
-	background-color: #CCC;
+	margin: 1%;
+	flex-direction: column;
+	justify-content: center;
+
 }
 h2 {
 	text-align: center;
@@ -124,6 +120,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	height: 50px;
+	box-shadow: 3px 3px 6px black;
 }
 footer div {
 	display: flex;
