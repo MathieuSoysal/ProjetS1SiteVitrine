@@ -4,6 +4,7 @@
 }
 main {
 	display: flex;
+	flex-direction: column;
 }
 body {
 	background-color: white;
