@@ -55,6 +55,11 @@ main {
 	flex-direction: column;
 }
 article {
+<<<<<<< HEAD
+	width: 64%;
+	background-color: #C5C5C533;
+	color: white;
+=======
 	margin: 1%;
 	background-color: white;
 	box-shadow: 0px 3px 6px black;
@@ -64,6 +69,7 @@ main :hover {
 }
 main>article :hover{
 	box-shadow: none;
+>>>>>>> f2fefa382e5fe65ff9da913fc4261b104dbf99ba
 }
 article img {
 	width: 30%;
@@ -78,10 +84,12 @@ h2 {
 	text-align: center;
 	font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
 	margin: 10px 0px;
+	  color: white;
 }
 h3 {
   font-style: italic;
-  color: blue;
+
+  color: white;
   margin: 1em;
   border: 1px;
   border-style: solid;
@@ -90,6 +98,7 @@ h3 {
 p {
 	text-indent: 5px;
 	margin: 30px 0px;
+	color: white;
 }
 a {
 	text-decoration: none;
@@ -168,4 +177,18 @@ footer div {
 }
 .menu-accordeon li:hover li {
   max-height: 15em;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
 }
