@@ -2,12 +2,6 @@
     font-family: kurale;
     src: url("./fonts/kurale/kurale-regular.otf");
 }
-main {
-	display: flex;
-}
-.faq main {
-	display: inline;
-}
 body {
 	background-color: white;
 	width:98%;
@@ -68,9 +62,20 @@ div:hover > .submenu {
 div:hover > .puce {
 	visibility: visible;
 }
+main {
+	display: flex;
+	flex-direction: column;
+}
 article {
 	width: 64%;
-	background-color: #CCC;
+	background-color: #C5C5C533;
+	color: white;
+}
+article img {
+	width: 50%;
+	height: 90%;
+	display: flex;
+	align-items: center;
 }
 aside {
 	width: 34%;
@@ -81,10 +86,12 @@ h2 {
 	text-align: center;
 	font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
 	margin: 10px 0px;
+	  color: white;
 }
 h3 {
   font-style: italic;
-  color: blue;
+
+  color: white;
   margin: 1em;
   border: 1px;
   border-style: solid;
@@ -93,6 +100,7 @@ h3 {
 p {
 	text-indent: 5px;
 	margin: 30px 0px;
+	color: white;
 }
 a {
 	text-decoration: none;
@@ -170,4 +178,18 @@ footer div {
 }
 .menu-accordeon li:hover li {
   max-height: 15em;
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
 }
