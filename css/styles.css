@@ -10,12 +10,15 @@ body {
 	margin: 0px 0px;
 	flex-direction: column;
 }
+header {
+	display: flex;
+	align-content: center;
+}
 nav {
 	text-align: center;
-	position: fixed;
 	background-color: #FFFFCC;
 	box-shadow: 3px 3px 6px black;
-	height: 50px;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
