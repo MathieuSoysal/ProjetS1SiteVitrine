@@ -55,8 +55,9 @@ article {
 	margin: 1%;
 	background-color: #c6ddff;;
 	box-shadow: 0px 3px 6px black;
-	display: flex;
+	
 }
+.
 main > :hover {
 	box-shadow: 3px 6px 6px black;
 }
@@ -68,6 +69,7 @@ article > img {
 	padding: 1%;
 	flex-direction: column;
 	justify-content: center;
+	float: left;
 
 }
 h2 {
@@ -110,6 +112,15 @@ footer a {
 	padding: 0px 10px;
 	color: black;
 	text-decoration: none;
+}
+.cliquable {
+	transition: all .2s ease-in-out;
+
+}
+
+.cliquable:hover{
+	transform:scale(1.2,1.2);
+	transform-origin:0 0;
 }
 .menu-accordeon {
 	padding:0;
