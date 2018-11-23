@@ -59,6 +59,7 @@ article {
 	margin: 1%;
 	background-color: #c6ddff;;
 	box-shadow: 0px 3px 6px black;
+	display: flex;
 }
 main :hover {
 	box-shadow: 3px 6px 6px black;
