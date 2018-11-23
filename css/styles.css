@@ -56,11 +56,11 @@ article {
 	background-color: #c6ddff;;
 	box-shadow: 0px 3px 6px black;
 }
-main :hover {
+main > :hover {
 	box-shadow: 3px 6px 6px black;
 }
 
-article>img {
+article > img {
 	width: 30%;
 	height: 90%;
 	display: flex;
