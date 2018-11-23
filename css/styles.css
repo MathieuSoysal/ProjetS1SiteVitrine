@@ -10,15 +10,11 @@ body {
 	margin: 0px 0px;
 	flex-direction: column;
 }
-header {
-	display: flex;
-	align-content: center;
-}
 nav {
 	text-align: center;
 	background-color: #FFFFCC;
 	box-shadow: 3px 3px 6px black;
-	position: fixed;
+	padding: 15px 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -63,14 +59,12 @@ article {
 main :hover {
 	box-shadow: 3px 6px 6px black;
 }
-main>article :hover{
-	box-shadow: none;
-}
-article img {
+
+article>img {
 	width: 30%;
 	height: 90%;
 	display: flex;
-	margin: 1%;
+	padding: 1%;
 	flex-direction: column;
 	justify-content: center;
 
@@ -105,13 +99,11 @@ footer {
 	text-align: center;
 	background-color: #FFFFCC;
 	box-shadow: 3px 3px 6px black;
-	height: 50px;
+	padding: 20px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 100%;
-	height: 100%;
 }
 footer a {
 	padding: 0px 10px;
@@ -129,7 +121,7 @@ footer a {
 }
 .menu-accordeon li {
 	background-color:#727272; 
-	background-image:-webkit-linear-gradient(top, #727272 0%, #727272 100%);
+	background-image: webkit-linear-gradient(top, #727272 0%, #727272 100%);
 	background-image: linear-gradient(to bottom, #727272 0%, #727272 100%);
 	margin-bottom:10px;
 	border:solid 10% #727272
