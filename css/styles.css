@@ -3,8 +3,6 @@
     src: url("./fonts/kurale/kurale-regular.otf");
 }
 body {
-	background-image: url("../images/fondCiel.jpg");
-	background-attachment: fixed;
 	text-align: left;
 	display: flex;
 	margin: 0px 0px;
@@ -51,15 +49,14 @@ main {
 }
 article {
 	color: black;
-	margin: 1%;
 	background-color: #c6ddff;;
-	box-shadow: 0px 3px 6px black;
-<<<<<<< HEAD
-=======
-	
->>>>>>> 111e5731724d08bc538c0bab72e1ad6aa5fd0fe0
 }
-.
+main :nth-child(odd) {
+	background-color: #5BBDBF
+}
+main :nth-child(even) {
+	background-color: #FF5850
+}
 main > :hover {
 	box-shadow: 3px 6px 6px black;
 }
@@ -68,14 +65,8 @@ article > img {
 	height: 90%;
 	display: flex;
 	padding: 1%;
-<<<<<<< HEAD
-	float: left;
-=======
 	flex-direction: column;
 	justify-content: center;
-	float: left;
-
->>>>>>> 111e5731724d08bc538c0bab72e1ad6aa5fd0fe0
 }
 h2 {
 	text-align: center;
