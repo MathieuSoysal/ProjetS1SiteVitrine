@@ -10,18 +10,23 @@ body {
 }
 nav {
 	text-align: center;
-	background-color: #FFFFCC;
+	background-color: #1e2239;
 	box-shadow: 3px 3px 6px black;
 	padding: 15px 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+
+
 }
 nav a {
 	padding: 0px 10px;
-	color: black;
+	color: white;
 	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
+
 }
 nav a:hover{
 	transition : 1.2s;
@@ -37,7 +42,7 @@ width:  100%;
 .submenu {
 	position: absolute;
 	margin-left: 0px;
-	background-color: #FFFFCC;
+	background-color: #1e2239;
 	display: flex;
 	visibility: hidden;
 	flex-direction: column;
@@ -47,6 +52,7 @@ div:hover > .submenu {
 }
 .puce {
 	visibility: hidden;
+	color: white;
 }
 div:hover > .puce {
 	visibility: visible;
@@ -57,13 +63,13 @@ main {
 }
 article {
 	color: black;
-	background-color: #c6ddff;;
+	background-color: white;
 }
 main :nth-child(odd) {
-	background-color: #5BBDBF
+	background-color: #C5C5C5;
 }
 main :nth-child(even) {
-	background-color: #FF5850
+	background-color: white;
 }
 main > :hover {
 	box-shadow: 3px 6px 6px black;
@@ -104,7 +110,7 @@ li{
 }
 footer {
 	text-align: center;
-	background-color: #FFFFCC;
+	background-color: #1e2239;
 	box-shadow: 3px 3px 6px black;
 	padding: 20px;
 	display: flex;
