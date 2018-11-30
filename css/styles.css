@@ -1,11 +1,8 @@
 @font-face {
     font-family: Arial;
-   /* src: url("./fonts/kurale/kurale-regular.otf");*/
+    /*src: url("./fonts/kurale/kurale-regular.otf");*/
 }
 body {
-/*	background-image: url("../images/fondCiel.jpg"); */
-	background-attachment: fixed;
-	background-size: 100%;
 	text-align: left;
 	display: flex;
 	margin: 0px 0px;
@@ -13,22 +10,18 @@ body {
 }
 nav {
 	text-align: center;
-	background-color: #111;
+	background-color: #FFFFCC;
 	box-shadow: 3px 3px 6px black;
 	padding: 15px 0px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
-	   font-family: Arial;
-	   text-transform: bold;
-
 }
 nav a {
 	padding: 0px 10px;
-	color: white;
+	color: black;
 	text-decoration: none;
-	text-transform: 0.8s ease-in-out;
 }
 nav a:hover{
 	transition : 1.2s;
@@ -38,15 +31,13 @@ nav a:hover{
 width:  100%;
   height: 100%;
 }
-
-
 .posdiv {
 	position: relative;
 }
 .submenu {
 	position: absolute;
 	margin-left: 0px;
-	background-color: #111;
+	background-color: #FFFFCC;
 	display: flex;
 	visibility: hidden;
 	flex-direction: column;
@@ -56,7 +47,6 @@ div:hover > .submenu {
 }
 .puce {
 	visibility: hidden;
-	color: white;
 }
 div:hover > .puce {
 	visibility: visible;
@@ -67,9 +57,13 @@ main {
 }
 article {
 	color: black;
-	margin: 1%;
-	background-color: #ffffffe6;;
-	box-shadow: 0px 3px 6px black;
+	background-color: #c6ddff;;
+}
+main :nth-child(odd) {
+	background-color: #5BBDBF
+}
+main :nth-child(even) {
+	background-color: #FF5850
 }
 main > :hover {
 	box-shadow: 3px 6px 6px black;
@@ -81,7 +75,6 @@ article > img {
 	padding: 1%;
 	flex-direction: column;
 	justify-content: center;
-	float: left;
 }
 h2 {
 	text-align: center;
@@ -102,7 +95,6 @@ p {
 	margin: 30px 0px;
 	color: black;
 }
-
 textarea {
 	height: 45px;
 	width: 40%;
