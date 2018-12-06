@@ -8,6 +8,17 @@ body {
 	margin: 0px 0px;
 	flex-direction: column;
 }
+section
+
+{
+
+    -webkit-column-count:2; /* Opera, Safari, Google Chrome */
+
+    -moz-column-count: 2; /* Firefox */
+
+    column-count: 2; /* Internet Explorer */
+
+}
 nav {
 	text-align: center;
 	background-color: #1e2239;
@@ -120,8 +131,10 @@ footer {
 }
 footer a {
 	padding: 0px 10px;
-	color: black;
+	color: white;
 	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold;
 }
 .cliquable {
 	transition: all .2s ease-in-out;
