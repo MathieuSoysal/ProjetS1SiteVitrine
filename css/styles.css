@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Arial;
+    font-family: Optima, sans-serif;
     /*src: url("./fonts/kurale/kurale-regular.otf");*/
 }
 body {
@@ -35,11 +35,33 @@ nav a {
 	padding: 0px 10px;
 	color: white;
 	text-decoration: none;
-	font-family: Arial;
-	font-weight: bold;
+	font-family: Optima, sans-serif;
+
 
 }
 nav a:hover{
+	transition : 1.2s;
+	color: cyan;
+}
+footer {
+	text-align: center;
+	background-color: #1e2239;
+	box-shadow: 3px 3px 6px black;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+footer a {
+	padding: 0px 10px;
+	color: white;
+	text-decoration: none;
+	font-family: Optima, sans-serif;
+
+}
+
+footer a:hover{
 	transition : 1.2s;
 	color: cyan;
 }
@@ -75,9 +97,11 @@ main {
 article {
 	color: black;
 	background-color: white;
+
+
 }
 main :nth-child(odd) {
-	background-color: #C5C5C5;
+	background-color: #F0F0F0;
 }
 main :nth-child(even) {
 	background-color: white;
@@ -93,11 +117,14 @@ article > img {
 	flex-direction: column;
 	justify-content: center;
 }
-h2 {
+h2 {    font-family: Optima, sans-serif;
 	text-align: center;
 	font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
 	margin: 10px 0px;
 	color: black;
+}
+p{
+	    font-family: Optima, sans-serif;
 }
 h3 {
 	font-style: italic;
@@ -119,26 +146,17 @@ textarea {
 li{
 	margin-left: 20px;
 }
-footer {
-	text-align: center;
-	background-color: #1e2239;
-	box-shadow: 3px 3px 6px black;
-	padding: 20px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-evenly;
+.cliquable p{
+	color: grey;
 }
-footer a {
-	padding: 0px 10px;
-	color: white;
-	text-decoration: none;
-	font-family: Arial;
-	font-weight: bold;
+.cliquable p:hover{
+	color: black;
 }
+
 .cliquable {
 	transition: all .2s ease-in-out;
-
+	display:flex;
+	flex-direction; row;
 }
 
 .cliquable:hover{
