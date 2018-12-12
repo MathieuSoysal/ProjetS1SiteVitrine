@@ -1,4 +1,4 @@
-# projet
+﻿# projet
 Le projet de site web pour janvier
 
 Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça pose problème à qqn
@@ -44,3 +44,8 @@ Surtout n'oublier pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.
 
 Bien-sûr rien vous oblige à utiliser la plateforme OC pour les formations, vous prenez ce que vous préférez.
+
+
+
+
+Gillet bleu, éspeulette et upércule polis sur sont lit d'urètre écarlatte 
