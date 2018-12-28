@@ -140,7 +140,7 @@ li{
 .cliquable {
 	transition: all .2s ease-in-out;
 	display:flex;
-	flex-direction; row;
+	flex-direction: row;
 }
 .cliquable:hover{
 	transform:scale(1.2,1.2);
