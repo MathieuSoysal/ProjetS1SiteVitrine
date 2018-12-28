@@ -1,8 +1,5 @@
 ﻿# projet
 Le projet de site web pour janvier
-
-Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça pose problème à qqn
-
                                       ______________________________________________
 # Les critères principaux sur lesquels nous serons noté sont:
 
@@ -40,14 +37,7 @@ Pour l'instant on part sur l'idée de Mathieu SOYSAL du site de BTP sauf si ça 
 
  - https://openclassrooms.com/fr/courses/2342361-gerez-votre-code-avec-git-et-github *(Pour l'organisation)*
 
-Surtout n'oublier pas la formation GitHub et Git avant tout !
+Surtout n'oubliez pas la formation GitHub et Git avant tout !
 Ou sinon ça risque d'être le bordel.
 
-Bien-sûr rien vous oblige à utiliser la plateforme OC pour les formations, vous prenez ce que vous préférez.
-
-
-
-
-Gillet bleu, éspeulette et upércule polis sur sont lit d'urètre écarlatte.
-L'orseque jossiane à polis l'huitre, dit-elle? Survient un sphinctère de crétasser au loukoum.
-Yeah
+Bien-sûr rien ne vous oblige à utiliser la plateforme OC pour les formations, vous prenez ce que vous préférez.
