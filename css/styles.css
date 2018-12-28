@@ -8,17 +8,6 @@ body {
 	margin: 0px 0px;
 	flex-direction: column;
 }
-section
-
-{
-
-    -webkit-column-count:2; /* Opera, Safari, Google Chrome */
-
-    -moz-column-count: 2; /* Firefox */
-
-    column-count: 2; /* Internet Explorer */
-
-}
 nav {
 	text-align: center;
 	background-color: #1e2239;
@@ -36,8 +25,6 @@ nav a {
 	color: white;
 	text-decoration: none;
 	font-family: Optima, sans-serif;
-
-
 }
 nav a:hover{
 	transition : 1.2s;
@@ -66,8 +53,8 @@ footer a:hover{
 	color: cyan;
 }
 .imaMenu{
-width:  100%;
-  height: 100%;
+	width:  100%;
+	height: 100%;
 }
 .posdiv {
 	position: relative;
@@ -96,14 +83,11 @@ main {
 }
 article {
 	color: black;
-	background-color: white;
-
-
 }
-main :nth-child(odd) {
+article:nth-of-type(odd) {
 	background-color: #F0F0F0;
 }
-main :nth-child(even) {
+article:nth-of-type(even) {
 	background-color: white;
 }
 main > :hover {
@@ -117,14 +101,15 @@ article > img {
 	flex-direction: column;
 	justify-content: center;
 }
-h2 {    font-family: Optima, sans-serif;
+h2 {    
+	font-family: Optima, sans-serif;
 	text-align: center;
 	font-family: "kurale","Lucida Sans Unicode", "Arial", "sans-serif";
 	margin: 10px 0px;
 	color: black;
 }
 p{
-	    font-family: Optima, sans-serif;
+	font-family: Optima, sans-serif;
 }
 h3 {
 	font-style: italic;
@@ -152,13 +137,11 @@ li{
 .cliquable p:hover{
 	color: black;
 }
-
 .cliquable {
 	transition: all .2s ease-in-out;
 	display:flex;
 	flex-direction; row;
 }
-
 .cliquable:hover{
 	transform:scale(1.2,1.2);
 	transform-origin:0 0;
