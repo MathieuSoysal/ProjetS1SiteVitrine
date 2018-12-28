@@ -48,4 +48,6 @@ Bien-sûr rien vous oblige à utiliser la plateforme OC pour les formations, vou
 
 
 
-Gillet bleu, éspeulette et upércule polis sur sont lit d'urètre écarlatte 
+Gillet bleu, éspeulette et upércule polis sur sont lit d'urètre écarlatte.
+L'orseque jossiane à polis l'huitre, dit-elle? Survient un sphinctère de crétasser au loukoum.
+Yeah
