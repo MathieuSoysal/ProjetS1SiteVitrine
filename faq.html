@@ -2,7 +2,7 @@
 <html>
   <head>
 		<meta charset="utf-8">
-		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>FAQ</title>
 		<link rel="icon" href="images/faq.ico" />		
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -10,31 +10,27 @@
 
 	<body id="anchor_begin">
         <nav>
-            <div><span class="puce">○</span><a href="./index.html">Accueil</a></div>
-
-            <div><span class="puce">○</span><a href="./produit.html">Nos produits</a></div>
-
-            <div><span class="puce">○</span><a href="./equipe.html">Notre equipe</a></div>
-            
-            <div><span class="puce">○</span><a href="./faq.html">FAQ</a></div>
-
-            <div class="posdiv">
-                <span class="puce">○</span><a href="./nousrejoindre.html">Carrière</a>
-
-                <div class="submenu">
-                    <div><span class="puce">•</span><a href="nousrejoindre.html#one">Metier1</a></div>
-                    
-                    <div><span class="puce">•</span><a href="nousrejoindre.html#two">Metier2</a></div>
-                    
-                    <div><span class="puce">•</span><a href="nousrejoindre.html#three">Metier3</a></div>
-                </div>
-            </div>
-        </nav>
-
+        	<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button"/>
+			<ul>
+				<li class="menu-accueil"><a href="./index.html">Accueil</a></li>
+				<li class="menu-produit"><a href="./produit.html">Nos modèles</a></li>
+				<li class="menu-equipe"><a href="./equipe.html">Notre équipe</a></li>
+				<li class="menu-faq"><a href="./faq.html">FAQ</a></li>
+				<li class="menu-nousrejoindre"><a href="./nousrejoindre.html">Carrière</a>
+					<ul class="submenu">
+						<li><a href="nousrejoindre.html#one">Metier1</a></li>
+						<li><a href="nousrejoindre.html#two">Metier2</a></li>
+						<li><a href="nousrejoindre.html#three">Metier3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
   
 		<main>	
             <article>
-			     <p> Sélectionnez une catégorie de question et cliquez sur celle-ci.</p>
+            	<!--<img class="burger" src="./images/acceuil.ico" alt="Menu" id="menu">-->
+			    <p> Sélectionnez une catégorie de question et cliquez sur celle-ci.</p>
                 <ul class="menu-accordeon">
                     <li><a href="#1">Nos véhicules</a>
                         <ul>
@@ -45,27 +41,25 @@
                             <li><a href="#13">lien sous menu 1</a></li>
                         </ul>
                     </li>
-                    <li><a href="#2">Problème rencontré</a>
+                    <li><a href="#2">Carburant</a>
                         <ul>
-                            <li><a href="#21">azdazdazd</a></li>
+                            <li><a href="#21">Existe-t-il une motorisationn GPL ?</a></li>
                             
-                            <li><a href="#22">aedazd</a></li>
+                            <li><a href="#22">Existe-t-il des modèles électriques ?</a></li>
                             
                             <li><a href="#23">Lien sous menu 2</a></li>
                         </ul>
                     </li>
-                    <li><a href="#3">Notre équipe</a>
+                    <li><a href="#3">Options des véhicules</a>
                         <ul>
-                            <li><a href="#31">Lien sous menu 3</a></li>
+                            <li><a href="#31">Mon mari adore Dark Vador, existe-t-il un thème étoile de la mort ?</a></li>
                             
-                            <li><a href="#32">Lien sous menu 3</a></li>
+                            <li><a href="#32">Comment faire pour changer les motifs et les couleurs ?</a></li>
                             
-                            <li><a href="#33">Lien sous menu 3</a></li>
+                            <li><a href="#33">Est-il possible d'acheter des modèles miniatures ?</a></li>
                         </ul>
                     </li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar consectetur tempor. Mauris ultricies neque nunc, et consectetur enim elementum quis. Integer et vestibulum diam, et fringilla nisi. Phasellus lobortis, elit tincidunt viverra vulputate, magna odio imperdiet mi, ac viverra tellus nunc vitae odio. Aenean pellentesque fermentum arcu, quis consectetur quam porttitor id. Mauris hendrerit volutpat viverra. Proin euismod consectetur feugiat. Aliquam elementum est quis mollis finibus. Sed laoreet accumsan eros sed ultricies. Phasellus a neque nec dui sagittis tincidunt a sit amet felis. Morbi id vehicula nulla. Etiam fermentum sem risus, vitae euismod augue malesuada at.
-             </p>
 			</article>
             <article>
                 <ul>
@@ -73,42 +67,40 @@
                         <ul>
                             <li id="11">Réponse 1</li>
                             
-                            <li>Réponse 2</li>
+                            <li id="12">Réponse 2</li>
                             
-                            <li>Réponse 3</li>
+                            <li id="13">Réponse 3</li>
                         </ul>
                     </li>
                     <li id="2"><h2>catégorie de réponse 2</h2>
                         <ul>
-                            <li>Réponse 1</li>
+                            <li id="21">Réponse 1</li>
                             
-                            <li>Réponse 2</li>
+                            <li id="22">Réponse 2</li>
                             
-                            <li>Réponse 3</li>
+                            <li id="23">Réponse 3</li>
                         </ul>
                     </li>
                     <li id="3"><h2>catégorie de réponse 3</h2>
                         <ul>
-                            <li>Réponse 1</li>
+                            <li id="31">Réponse 1</li>
                             
-                            <li>Réponse 2</li>
+                            <li id="32">Réponse 2</li>
                             
-                            <li>Réponse 3</li>
+                            <li id="33">Réponse 3</li>
                         </ul>
                     </li>
                 </ul> 
-                <p>Etiam finibus lacus sit amet tellus viverra, consectetur ullamcorper dolor ullamcorper. Nullam quam nulla, vestibulum vitae libero non, fringilla porta dolor. Maecenas porttitor eget leo eu semper. Etiam venenatis vitae est vel luctus. Vestibulum venenatis ligula tellus. Phasellus pulvinar justo vel justo fringilla iaculis. Curabitur efficitur turpis eu ex cursus commodo. Nunc porttitor, leo ac placerat facilisis, nulla erat consequat libero, ac placerat ante felis sit amet nibh. Aliquam ac mi eu nunc varius sodales. Nulla ultrices ornare dolor. Etiam fermentum enim at finibus aliquam. Donec sagittis posuere sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </article>
 		</main>
 
 		<footer>
-			<div><a href="#anchor_begin">Retour au début</a></div>
-
-			<div><a href="./contact.html">Contact</a></div>
-
-		    <div><a href="./presse.html">Presse</a></div>
-
-		    <div><a href="./nousrejoindre.html">Carrière</a></div>
+			<ul>
+				<li class="menu-debut"><a href="#anchor_begin">Retour au début</a></li>
+				<li class="menu-contact"><a href="./contact.html">Contact</a></li>
+				<li class="menu-equipe"><a href="./presse.html">Presse</a></li>
+				<li class="menu-nousrejoindre"><a href="./nousrejoindre.html">Carrière</a></li>
+			</ul>
 		</footer>
     </body>
 </html>
