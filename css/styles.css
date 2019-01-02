@@ -230,15 +230,34 @@ textarea {
 
 /* ################## Début Page produit ##################*/
 
+#produit {
+	background-image: url("./fonts/font-nuage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#produit section, #produit :not(section:first-child) {
+	margin: 10px;
+}
+
+#produit section:hover, #produit article:hover{
+	animation: opac 1s linear 0s 1 normal;
+	opacity: 0.95;
+}
+
 #produit section header {
 		background-color: rgba(63, 89, 140,0.8);
 		border-radius: inherit;}
 
 #produit section header p {
-				font-size: 1.6em;
-				text-align: justify;
-				font-style: italic;
-				opacity: 0.9;}
+	font-size: calc(1.5vw + 0.5vh + 0.5em);
+	text-align: justify;
+	font-style: italic;
+	opacity: 0.9;
+	margin-left: 0.75vw;
+	margin-right: 0.75vw;}
+	
 #produit  section { 
 					background-color:rgba(63, 89, 140,0.4) ;
 					border-radius: 10px;
@@ -264,7 +283,10 @@ textarea {
 		font-family: Calibri, 'Trebuchet MS', sans-serif}
 
 #produit section > article p{
-	font-size: 1.5em;}
+	font-size: calc(1.5vh + 1vw + 0.5em);
+	text-align: justify;
+	opacity: 0.78;
+}
 
 #produit section article{
 	margin: 10px;
@@ -281,7 +303,7 @@ textarea {
 	border-radius: inherit}
 
 #produit section > article figure img {
-	width: calc(17vw + 21vh);
+	width: calc(17vw + 25vh);
 	height: auto;
 	border: 4px solid rgba(30, 34, 57,0.6) ;
 	border-radius: 4px}
@@ -293,8 +315,8 @@ textarea {
 	float: right}
 
   @keyframes opac{
-    0% {border-radius: 50%;opacity: 0}
-    100% {border-radius: 10px;opacity: 0.8;}
+    0% {opacity: initial;}
+    100% {opacity: 1;}
   }
 
 /*################## Fin page Produit ##################*/
