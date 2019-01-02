@@ -1,8 +1,8 @@
 @font-face {
     font-family:"Optima";
-    /*src: url("./fonts/kurale/kurale-regular.otf");*/
+    src: url("./fonts/kurale/kurale-regular.otf");
 }
-
+/* ############## CSS Général ############## */
 body {
 	display: flex;
 	margin: 0px;
@@ -226,6 +226,8 @@ textarea {
 .menu-accordeon li:hover li {
 	max-height: 15em;
 }
+/* ############## Fin CSS Générale ############## */
+
 /* ################## Début Page produit ##################*/
 
 #produit section header {
@@ -297,6 +299,8 @@ textarea {
 
 /*################## Fin page Produit ##################*/
 
+
+/*############## Responsiv CSS Génaral (Header) ############## */
 @media(max-width: 1275px){}
 @media(max-width: 1150px){}
 
@@ -307,28 +311,28 @@ textarea {
 		padding: 15px 0px;
 	}
 
-	nav ul {
+	body > header nav ul {
 		display: flex;
 		flex-direction: column;
 	}
 
-	nav li {
+	body > header nav li {
 		display: flex;
 		flex-direction: column;
 	}
 
-	nav li:hover .submenu {
+	body > header nav li:hover .submenu {
 		width: 100%;
 		position: static;
 	}
 
-	nav label {
+	body > header nav label {
 		color: white;
 		text-decoration: none;
 		font-family: Optima, sans-serif;
 	}
 
-	nav label:hover{
+	body > header nav label:hover{
 		transition : 1.1s;
 		color: cyan;
 	}
