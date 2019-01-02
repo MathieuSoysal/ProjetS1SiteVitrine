@@ -226,6 +226,71 @@ textarea {
 .menu-accordeon li:hover li {
 	max-height: 15em;
 }
+/* Début Page produit */
+
+#produit section header {
+		background-color: rgba(63, 89, 140,0.8);
+		border-radius: inherit;}
+
+#produit section header p {
+				font-size: 1.1em;
+				text-align: justify;
+				font-style: italic;
+				opacity: 0.9;}
+				/* Problème ici */
+#produit  section { 
+					background-color: #bcbdc1b3;
+					border-radius: 10px;
+					display: inline-flex;
+					align-items: center;}
+
+#produit section h1 {
+	font-size: 3em;
+	color: goldenrod;
+	background-color: #3F598C;
+	border-radius: 8px;}
+	
+#produit section h2{
+		font-size:2em;
+		background-color: rgba(63, 89, 140,0.7);
+		border-radius: 8px;
+		color : rgba(245, 222, 179,0.85);
+		font-family: Calibri, 'Trebuchet MS', sans-serif}
+
+#produit section > article p{
+	font-size: 1.5em;}
+
+#produit section article{
+	display: inline-block;
+	align-items: center;
+	width: 95%}
+
+#produit section > article:nth-child(odd) {
+	background-color: #A6936C;
+	border-radius: inherit;}
+
+#produit section > article:nth-child(even) {
+	background-color: rgba(188, 189, 193,0.8);
+	border-radius: inherit}
+
+#produit section > article figure img {
+	width: calc(17vw + 21vh);
+	height: auto;
+	border: 4px solid rgba(30, 34, 57,0.6) ;
+	border-radius: 4px}
+
+#produit section > article:nth-child(even) figure {
+	float: left}
+
+#produit section > article:nth-child(odd) figure {
+	float: right}
+
+  @keyframes opac{
+    0% {border-radius: 50%;opacity: 0}
+    100% {border-radius: 10px;opacity: 0.8;}
+  }
+
+/* Fin page Produit */
 
 @media(max-width: 1275px){}
 @media(max-width: 1150px){}
