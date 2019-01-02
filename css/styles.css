@@ -1,5 +1,5 @@
 @font-face {
-    font-family: Optima, sans-serif;
+    font-family:"Optima";
     /*src: url("./fonts/kurale/kurale-regular.otf");*/
 }
 
@@ -226,32 +226,36 @@ textarea {
 .menu-accordeon li:hover li {
 	max-height: 15em;
 }
-/* Début Page produit */
+/* ################## Début Page produit ##################*/
 
 #produit section header {
 		background-color: rgba(63, 89, 140,0.8);
 		border-radius: inherit;}
 
 #produit section header p {
-				font-size: 1.1em;
+				font-size: 1.6em;
 				text-align: justify;
 				font-style: italic;
 				opacity: 0.9;}
-				/* Problème ici */
 #produit  section { 
-					background-color: #bcbdc1b3;
+					background-color:rgba(63, 89, 140,0.4) ;
 					border-radius: 10px;
-					display: inline-flex;
-					align-items: center;}
+					display: flex;
+					flex-wrap: wrap;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+				}
 
 #produit section h1 {
+	text-align: center;
 	font-size: 3em;
 	color: goldenrod;
 	background-color: #3F598C;
 	border-radius: 8px;}
 	
 #produit section h2{
-		font-size:2em;
+		font-size:2.6em;
 		background-color: rgba(63, 89, 140,0.7);
 		border-radius: 8px;
 		color : rgba(245, 222, 179,0.85);
@@ -261,16 +265,17 @@ textarea {
 	font-size: 1.5em;}
 
 #produit section article{
+	margin: 10px;
 	display: inline-block;
 	align-items: center;
-	width: 95%}
+	width: 85%;}
 
 #produit section > article:nth-child(odd) {
 	background-color: #A6936C;
 	border-radius: inherit;}
 
 #produit section > article:nth-child(even) {
-	background-color: rgba(188, 189, 193,0.8);
+	background-color: rgba(188, 189, 193, 0.932);
 	border-radius: inherit}
 
 #produit section > article figure img {
@@ -290,7 +295,7 @@ textarea {
     100% {border-radius: 10px;opacity: 0.8;}
   }
 
-/* Fin page Produit */
+/*################## Fin page Produit ##################*/
 
 @media(max-width: 1275px){}
 @media(max-width: 1150px){}
