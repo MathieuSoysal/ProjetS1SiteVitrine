@@ -233,9 +233,10 @@ textarea {
 @font-face {
 	font-family:"remarcle";
 	src: url("./fonts/remarcle/Remarcle.ttf");
-}
+} 
+/* Le fonts crée des problème avec la responsive il faut réglé le changement des chiffre en mot */
 #produit section:last-child h1, #produit section:last-child h2{
-	font-family: remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @font-face {
 	font-family:"Dodge";
@@ -316,9 +317,8 @@ textarea {
 
 #produit section article{
 	margin: 10px;
-	display: inline-block;
-	align-items: center;
-	width: 85%;}
+	width: 85%;
+}
 
 #produit section > article:nth-child(odd) {
 	background-color: #A6936C;
@@ -385,6 +385,16 @@ textarea {
 		transition : 1.1s;
 		color: cyan;
 	}
+	/* Je ne sais pas si mettre le bloc d'instruction en dessus est vraiment utile (les images devienne trés voir trop grande) */
+	/* #produit section > article figure img {
+		width: 80%;
+	}
 
+	#produit section > article figure{
+		float: none;
+	}
 
+	#produit section > article {
+		text-align: center;
+	} */
 }
