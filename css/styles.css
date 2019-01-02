@@ -234,9 +234,10 @@ textarea {
 	font-family:"remarcle";
 	src: url("./fonts/remarcle/Remarcle.ttf");
 } 
-/* Le fonts crée des problème avec la responsive il faut réglé le changement des chiffre en mot */
+/* Le fonts crée des problème avec la responsive il faut réglé le changement des chiffre en mot  */ 
+/* J'ai réglé le problème sur pas mal de taille de width possible il reste plus que se qui sont entre 580 et 680 l'image devient trop grande */
 #produit section:last-child h1, #produit section:last-child h2{
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-family:remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @font-face {
 	font-family:"Dodge";
@@ -300,6 +301,12 @@ textarea {
 	background-color: #3F598C;
 	border-radius: 8px;}
 	
+	#produit section:last-child h2::first-letter, #produit section:first-child + section h2::first-letter{
+		font-size: 1.1em;
+		color: rgba(218, 165, 32,0.95);
+
+	}
+
 #produit section h2{
 		font-size:2.6em;
 		background-color: rgba(63, 89, 140,0.7);
@@ -345,6 +352,18 @@ textarea {
     100% {opacity: 1;}
   }
 
+  @media (max-width: 580px) {
+
+	#produit section > article figure img {
+		width: 85%;
+		height: initial;
+	}
+
+	#produit section > article figure{
+		float: none;
+		text-align: center;
+	}
+  }
 
 /*################## Fin page Produit ##################*/
 
@@ -385,16 +404,4 @@ textarea {
 		transition : 1.1s;
 		color: cyan;
 	}
-	/* Je ne sais pas si mettre le bloc d'instruction en dessus est vraiment utile (les images devienne trés voir trop grande) */
-	/* #produit section > article figure img {
-		width: 80%;
-	}
-
-	#produit section > article figure{
-		float: none;
-	}
-
-	#produit section > article {
-		text-align: center;
-	} */
 }
