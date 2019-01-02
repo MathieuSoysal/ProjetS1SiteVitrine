@@ -230,6 +230,29 @@ textarea {
 
 /* ################## Début Page produit ##################*/
 
+@font-face {
+	font-family:"remarcle";
+	src: url("./fonts/remarcle/Remarcle.ttf");
+}
+#produit section:last-child h1, #produit section:last-child h2{
+	font-family: remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+@font-face {
+	font-family:"Dodge";
+	src: url("./fonts/dodge2/Dodgv2.ttf")
+}
+#produit section:first-child h1, #produit section:first-child h2{
+	font-family: Dodge, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@font-face {
+	font-family:"FastOne";
+	src: url("./fonts/faster_one/FasterOne-Regular.ttf")
+}
+#produit section:first-child + section h1, #produit section:first-child + section h2{
+	font-family: FastOne, Georgia, Times, 'Times New Roman', serif;
+}
+
 #produit {
 	background-image: url("./fonts/font-nuage.jpg");
 	background-size: cover;
@@ -257,6 +280,7 @@ textarea {
 	opacity: 0.9;
 	margin-left: 0.75vw;
 	margin-right: 0.75vw;}
+
 
 #produit  section { 
 					background-color:rgba(63, 89, 140,0.4) ;
@@ -305,7 +329,7 @@ textarea {
 	border-radius: inherit}
 
 #produit section > article figure img {
-	width: calc(15vw + 27vh);
+	width: calc(7vw + 40vh);
 	height: auto;
 	border: 4px solid rgba(30, 34, 57,0.6) ;
 	border-radius: 4px}
