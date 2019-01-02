@@ -10,12 +10,12 @@ body {
 	flex-direction: column;
 }
 
-nav, footer {
+header nav, footer nav {
 	text-align: center;
 	background-color: #1e2239;
 }
 
-nav > ul, footer > ul {
+body > header > nav > ul, footer > nav > ul {
 	margin: 0px;
 	padding: 0px;
 	width: 100%;
@@ -23,13 +23,13 @@ nav > ul, footer > ul {
 	flex-direction: row;
 }
 
-nav li, footer li {
+body > header nav li, footer nav li {
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
 
-nav > ul > li, footer > ul > li {
+body > header nav > ul > li, footer nav > ul > li {
 	float: left;
 	position: relative;
 	display: flex;
@@ -37,26 +37,26 @@ nav > ul > li, footer > ul > li {
 	justify-content: center;
 }
 
-nav a, footer a {
+body > header a, footer a {
 	color: white;
 	text-decoration: none;
 	font-family: Optima, sans-serif;
 	display: inline-block;
 }
 
-nav > ul > li > a {
+body > header nav > ul > li > a {
 	padding: 15px 0px;
 	align-items: center;
 	flex-grow: 1;
 }
 
-footer > ul > li > a {
+footer nav > ul > li > a {
 	padding: 30px 0px;
 	align-items: center;
 	flex-grow: 1;
 }
 
-nav a:hover, footer a:hover {
+body > header a:hover, footer a:hover {
 	transition : 1.1s;
 	color: cyan;
 	background-color: #1e2269;
@@ -73,11 +73,11 @@ nav a:hover, footer a:hover {
 	flex-direction: column;
 }
 
-nav li:hover > .submenu {
+body > header nav li:hover > .submenu {
 	visibility: visible;
 }
 
-nav .submenu a {
+body > header nav .submenu a {
 	width: 100%;
 	padding: 10px 0px;
 }
@@ -86,11 +86,11 @@ nav .submenu a {
 	display: none;
 }
 
-nav input[type=checkbox] {
+body > header nav input[type=checkbox] {
 	display: none;
 }
 
-nav input[type=checkbox]:checked ~ ul {
+body > header nav input[type=checkbox]:checked ~ ul {
 	display: none;
 }
 
