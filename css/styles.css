@@ -10,6 +10,24 @@ body {
 	flex-direction: column;
 }
 
+body > header {
+	position: -webkit-sticky;
+	position: sticky;
+	width: 100%;
+	top: -1px;
+	z-index: 1000;
+	opacity: 0.75;
+}
+
+body > header:hover{
+	animation: opac-header 0.8s linear 0s 1 normal;
+	opacity: 1;
+}
+@keyframes opac-header{
+    0% {opacity: 0.75;}
+    100% {opacity: 1;}
+  }
+
 header nav, footer nav {
 	text-align: center;
 	background-color: #1e2239;
@@ -235,7 +253,7 @@ textarea {
 	src: url("./fonts/remarcle/Remarcle.ttf");
 } 
 /* Le fonts crée des problème avec la responsive il faut réglé le changement des chiffre en mot  */ 
-/* J'ai réglé le problème sur pas mal de taille de width possible il reste plus que se qui sont entre 580 et 680 l'image devient trop grande */
+/* J'ai réglé le problème sur pas mal de taille de width possible, il reste plus que ceux qui sont entre 580 et 680 l'image devient trop grande */
 #produit section:last-child h1, #produit section:last-child h2{
 	font-family:remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -283,8 +301,8 @@ textarea {
 	margin-left: 0.75vw;
 	margin-right: 0.75vw;}
 
-
-#produit  section { 
+	#produit  section {  
+		/* Il y a des flex à ajuster */
 					background-color:rgba(63, 89, 140,0.4) ;
 					border-radius: 10px;
 					display: flex;
@@ -299,7 +317,11 @@ textarea {
 	font-size: 3em;
 	color: goldenrod;
 	background-color: #3F598C;
-	border-radius: 8px;}
+	border-radius: 8px;
+	/* position: sticky;      anque de documentation sur la balise Sticky
+	width: 99%;
+	top: -1px; */
+}
 	
 	#produit section:last-child h2::first-letter, #produit section:first-child + section h2::first-letter{
 		font-size: 1.1em;
@@ -307,7 +329,7 @@ textarea {
 
 	}
 
-#produit section h2{
+#produit section article h2{
 		font-size:2.6em;
 		background-color: rgba(63, 89, 140,0.7);
 		border-radius: 8px;
