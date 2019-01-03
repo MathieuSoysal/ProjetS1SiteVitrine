@@ -13,7 +13,7 @@ Pour la disposition du site web je pense que nous pourrions commencer avec une d
  - Code indentation *(alignement tablutation)*
  - #.html avoir des nom de page le plus représentatif possible
  - Forms, css files, flex-design
- - Utiliser au minimum les balises vue en cours
+ - Au moins, Utiliser les balises vue en cours
  - Toujours valider le code html
 
  # prise en charge des projets:
