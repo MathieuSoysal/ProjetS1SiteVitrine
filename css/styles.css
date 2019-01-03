@@ -23,10 +23,11 @@ body > header:hover{
 	animation: opac-header 0.8s linear 0s 1 normal;
 	opacity: 1;
 }
+
 @keyframes opac-header{
     0% {opacity: 0.75;}
     100% {opacity: 1;}
-  }
+}
 
 header nav, footer nav {
 	text-align: center;
@@ -279,14 +280,14 @@ textarea {
 } 
 /* Le font créé des problèmes avec le responsive il faut régler le changement des chiffre en mot  */ 
 /* J'ai réglé le problème sur pas mal de tailles de width possibles, il ne reste plus que ceux qui sont entre 580 et 680, l'image devient trop grande */
-#produit section:last-child h1, #produit section:last-child h2{
+#produit section:last-child h2, #produit section:last-child h3{
 	font-family:remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 @font-face {
 	font-family:"Dodge";
 	src: url("./fonts/dodge2/Dodgv2.ttf")
 }
-#produit section:first-child h1, #produit section:first-child h2{
+#produit section:first-child h2, #produit section:first-child h3{
 	font-family: Dodge, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -294,7 +295,7 @@ textarea {
 	font-family:"FastOne";
 	src: url("./fonts/faster_one/FasterOne-Regular.ttf")
 }
-#produit section:first-child + section h1, #produit section:first-child + section h2{
+#produit section:first-child + section h2, #produit section:first-child + section h3{
 	font-family: FastOne, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -314,11 +315,11 @@ textarea {
 	opacity: 0.95;
 }
 
-#produit section header {
+#produit section .intro-Gamme {
 		background-color: rgba(63, 89, 140,0.8);
 		border-radius: inherit;}
 
-#produit section header p {
+#produit section .intro-Gamme p {
 	font-size: calc(1.5vw + 0.5vh + 0.5em);
 	text-align: justify;
 	font-style: italic;
@@ -337,7 +338,7 @@ textarea {
 					align-items: center;
 				}
 
-#produit section h1 {
+#produit section h2 {
 	text-align: center;
 	font-size: 3em;
 	color: goldenrod;
@@ -348,13 +349,13 @@ textarea {
 	top: -1px; */
 }
 	
-	#produit section:last-child h2::first-letter, #produit section:first-child + section h2::first-letter{
+	#produit section:last-child h3::first-letter, #produit section:first-child + section h3::first-letter{
 		font-size: 1.1em;
 		color: rgba(218, 165, 32,0.95);
 
 	}
 
-#produit section article h2{
+#produit section article h3{
 		font-size:2.6em;
 		background-color: rgba(63, 89, 140,0.7);
 		border-radius: 8px;
@@ -382,16 +383,16 @@ textarea {
 	background-color: rgba(188, 189, 193, 0.932);
 	border-radius: inherit}
 
-#produit section > article figure img {
+#produit section > article img {
 	width: calc(7vw + 40vh);
 	height: auto;
 	border: 4px solid rgba(30, 34, 57,0.6) ;
 	border-radius: 4px}
 
-#produit section > article:nth-child(even) figure {
+#produit section > article:nth-child(even) img {
 	float: left}
 
-#produit section > article:nth-child(odd) figure {
+#produit section > article:nth-child(odd) img {
 	float: right}
 
   @keyframes opac{
@@ -401,12 +402,12 @@ textarea {
 
   @media (max-width: 580px) {
 
-	#produit section > article figure img {
+	#produit section > article img {
 		width: 85%;
 		height: initial;
 	}
 
-	#produit section > article figure{
+	#produit section > article img{
 		float: none;
 		text-align: center;
 	}
