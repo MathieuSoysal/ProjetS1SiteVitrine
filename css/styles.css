@@ -64,6 +64,7 @@ body > header a, footer a {
 
 body > header nav > ul > li > a {
 	padding: 15px 0px;
+	font-size: calc( 2.25vh + 0.7vw + 0.3em);
 	align-items: center;
 	flex-grow: 1;
 }
