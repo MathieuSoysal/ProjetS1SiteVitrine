@@ -1,0 +1,58 @@
+MATHIEU SOYSAL:
+
+toutes ces polices dans produit sont un peu flashy, non ?
+lit ça https://www.lafabriquedunet.fr/creation-site-vitrine/articles/choisir-police-caracteres-site-web-google-fonts/
+ils parlent des google fonts mais ce qui est important c'est le fait qu'ils conseillent d'utiliser peu de polices (entre 1 et 3),
+d'utiliser des polices lisibles
+
+au niveau des tailles:
+- certains textes de produits deviennent vraiment trop gros
+- si tu veux mettre le texte du header aussi grand, peux tu aussi agrandir celui du footer et le mot "menu" en responsive
+
+sinon, est-ce que la mise en page de produit ne casse pas un peu la charte graphique du site ?
+les polices sont différentes, les cadres, le fond ...
+une charte graphique commune au site entier est un critère d'évaluation
+et puis on vend des voitures haut de gamme, il faut que la mise en page corresponde au type de client.
+C'est bien toi qui m'avais cité apple et microsoft en exemples de mise en forme ?
+
+j'ai remplacé les header que tu avait mis dans produit par une classe intro-Gamme
+
+j'ai enlevé les figure étant donné que nous n'avions aucune légende à mettre
+si vraiment tu en as besoin met un  div avec une classe
+
+j'ai remplacé les </br> par des div
+
+j'ai décalé les h1 et h2 de produit en h2 et h3
+
+avant de faire la fusionn j'avais réglé le problème des images sur produit mais puisque que tu t'occupe de cette page apparemment
+peux-tu t'en occuper ?
+
+Ceci dit, la taille et l'emplacement des éléments va bien en responsive
+mettre les images un coup à droite un coup à gauche c'est pas mal
+tu as bien utilisé les sections
+
+Je rappelle juste qu'ils nous poseront des questions sur le code le jour de la présentation,
+je comprends grosso modo ce que tu as fait, mais si il y a une question sur Produit, elle sera pour toi
+
+REDA REGAM:
+
+si tu ne met pas ton logo, on prendra celui de mathieu soysal
+
+CHARLIE ECREMENT:
+
+Continue d'étaler la pommade charlie. si tu veux tu peux nommer ton chien responsable presse et le rajouter comme
+il faut dans l'équipe et sur la page presse. comme présentation je propose "Wouf !"
+
+GENERAL:
+
+Ce qu'il faut faire en plus pour le sujet par ordre de moins en moins iimportant:
+1. "La page Équipe doit être responsive : la présentation se fera en grille sur une grande page ou en liste verticale quand la page est trop petite."
+2. Faire 3 page vite fait pour les 3 offres de poste car "Chaque offre de poste aura sa propre page Web présentant le métier du poste."
+3. Mettre le logo dans le h1 d'accueil, dans le nav-header et dans Produit
+4. Améliorer Presse
+5. Améliorer Nous rejoindre
+
+Optionnel:
+6. Ajouter des bouton achat dans Produit (des checkbox qui ne feront rien)
+7. Améliorer Contact
+8. Ajouter du contenu (communiqués de presse, Nous rejoindre, FAQ, Accueil)
