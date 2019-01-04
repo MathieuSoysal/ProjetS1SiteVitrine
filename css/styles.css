@@ -204,6 +204,7 @@ textarea {
 }
 
 .menu-accordeon {
+	transition: 1s;
 	padding:0;
 	list-style:none;
 	text-align: center;
@@ -515,10 +516,10 @@ textarea {
 	}
 
 	body > header nav input[type=checkbox]:checked ~ ul, body > header nav ul ul {
-		transition: 1s;
+		margin-top:0;
+		transition: 0.1s;
 		z-index: 1000;
 		visibility: visible;
-		margin-top:0;
 	}
 
 	h2 {   
