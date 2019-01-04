@@ -278,6 +278,17 @@ textarea {
 	border-radius: 0 0 15px 15px;
 }
 
+#equipe main section {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#equipe main section article {
+	max-width: 600px;
+}
+
 /* ################## Fin Page notre équipe ##################*/
 
 /* ################## Début Page produit ##################*/
