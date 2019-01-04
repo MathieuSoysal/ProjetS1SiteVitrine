@@ -29,7 +29,7 @@ body > header:hover{
     100% {opacity: 1;}
 }
 
-header nav, footer nav {
+header nav , footer nav  {
 	text-align: center;
 	background-color: #1e2239;
 }
@@ -257,7 +257,41 @@ textarea {
 
 /* ############## Fin CSS Générale ############## */
 
+/* ################## Début Page Carrière ##################*/
+
+#carriere header nav ul li a[href="./nousrejoindre.html"]{
+	background-color: rgba(240, 240, 240,0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+/* ################## Fin Page Carrière ##################*/
+
+/* ################## Début Page notre équipe ##################*/
+
+#equipe header nav ul li a[href="./equipe.html"]{
+	background-color: rgba(240, 240, 240,0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+/* ################## Fin Page notre équipe ##################*/
+
 /* ################## Début Page produit ##################*/
+
+#produit header nav ul li a[href="./produit.html"]{
+	background-color: rgba(240, 240, 240,0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+@keyframes Header-page{
+	0%{margin-top: -10vh}
+	100%{margin-top: 0}
+}
 
 @font-face {
 	font-family:"remarcle";
@@ -300,11 +334,11 @@ textarea {
 	opacity: 0.95;
 }
 
-#produit section .intro-Gamme {
+#produit section header {
 		background-color: rgba(63, 89, 140,0.8);
 		border-radius: inherit;}
 
-#produit section .intro-Gamme p {
+#produit section header p {
 	font-size: calc(1.5vw + 0.5vh + 0.5em);
 	text-align: justify;
 	font-style: italic;
@@ -363,7 +397,7 @@ textarea {
 }
 
 #produit section > article:nth-child(odd) {
-	background-color: #A6936C;
+	background-color: rgba(136, 131, 131, 0.9);
 	border-radius: inherit;}
 
 #produit section > article:nth-child(even) {
@@ -404,6 +438,12 @@ textarea {
 
 /* ################## Début page FAQ ################## */
 
+#faq header nav ul li a[href="./faq.html"]{
+	background-color: rgba(240, 240, 240,0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
 
 .reponse-faq {
 	list-style-type: none;
@@ -423,8 +463,6 @@ textarea {
 .reponse-faq li ol li {
 	padding: 5px 0 20px 0;
 }
-
-
 
 #faq li:target{
 	border-radius: 15px;
@@ -446,6 +484,8 @@ textarea {
 		display: block;
 		text-align: center;
 		padding: 15px 0px;
+		background-color: #3F598C;
+		z-index: 1000;
 	}
 
 	body > header nav li,body > header nav ul {
@@ -470,6 +510,7 @@ textarea {
 	}
 
 	nav input[type=checkbox]:checked ~ ul {
+		z-index: 1000;
 		display: none;
 	}
 
