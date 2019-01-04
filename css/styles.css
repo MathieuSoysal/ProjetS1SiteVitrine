@@ -255,21 +255,6 @@ textarea {
 	max-height: 15em;
 }
 
-.reponse-faq {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.reponse-faq > li:nth-of-type(even) {
-	background-color: #727272;
-	color: white;
-}
-
-.reponse-faq li ol li {
-	padding: 5px 0 20px 0;
-}
-
 /* ############## Fin CSS Générale ############## */
 
 /* ################## Début Page produit ##################*/
@@ -340,7 +325,7 @@ textarea {
 
 #produit section h2 {
 	text-align: center;
-	font-size: 3em;
+	font-size: calc(1.5vw + 1.5vh + 1em);
 	color: goldenrod;
 	background-color: #3F598C;
 	border-radius: 8px;
@@ -356,11 +341,13 @@ textarea {
 	}
 
 #produit section article h3{
-		font-size:2.6em;
+		font-size:calc(1.5vw + 1.5vh + 0.5em);
 		background-color: rgba(63, 89, 140,0.7);
 		border-radius: 8px;
 		color : rgba(245, 222, 179,0.85);
-		font-family: Calibri, 'Trebuchet MS', sans-serif}
+		font-family: Calibri, 'Trebuchet MS', sans-serif;
+		text-align: center;
+	}
 
 #produit section > article p{
 	font-size: calc(1.5vh + 1vw + 0.5em);
@@ -415,6 +402,43 @@ textarea {
 
 /*################## Fin page Produit ##################*/
 
+/* ################## Début page FAQ ################## */
+
+
+.reponse-faq {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.reponse-faq > article:nth-child(even) li {
+	background-color: #727272;
+	color: white;
+}
+
+#faq section > ul li:nth-child(even){
+	opacity: 0.85;;
+}
+
+.reponse-faq li ol li {
+	padding: 5px 0 20px 0;
+}
+
+
+
+#faq li:target{
+	border-radius: 15px;
+	background-color: rgba(114, 158, 191,1);
+	animation: target 1s linear 0s 4 alternate;
+}
+
+@keyframes target{
+	0%{background-color:rgba(114, 158, 191,1)}
+	100%{background-color:rgba(114, 158, 191,0.5)}
+}
+
+/* ################## Fin page FAQ ################## */
+
 /*############## Responsive CSS Général (Header) ############## */
 
 @media (max-width: 768px) {
@@ -424,12 +448,7 @@ textarea {
 		padding: 15px 0px;
 	}
 
-	body > header nav ul {
-		display: flex;
-		flex-direction: column;
-	}
-
-	body > header nav li {
+	body > header nav li,body > header nav ul {
 		display: flex;
 		flex-direction: column;
 	}
