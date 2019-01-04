@@ -63,16 +63,19 @@ body > header a, footer a {
 	display: inline-block;
 }
 
+.menu-mobile, body > header nav > ul > li > a, footer nav > ul > li > a{
+	font-size: calc( 1.5vh + 0.7vw + 0.3em);
+
+}
+
 body > header nav > ul > li > a {
 	padding: 20px 0;
-	font-size: calc( 2.25vh + 0.7vw + 0.3em);
 	align-items: center;
 	flex-grow: 1;
 }
 
 footer nav > ul > li > a {
 	padding: 30px 0;
-	font-size: calc( 2.25vh + 0.7vw + 0.3em);
 	align-items: center;
 	flex-grow: 1;
 }
@@ -478,7 +481,6 @@ textarea {
 
 @media (max-width: 768px) {
 	.menu-mobile {
-		font-size: calc( 2.25vh + 0.7vw + 0.3em);
 		display: block;
 		text-align: center;
 		padding: 15px 0px;
@@ -507,9 +509,16 @@ textarea {
 		color: cyan;
 	}
 
-	nav input[type=checkbox]:checked ~ ul {
+	body > header nav ul {
+		visibility: hidden;
+		margin-top:-110%;
+	}
+
+	body > header nav input[type=checkbox]:checked ~ ul, body > header nav ul ul {
+		transition: 1s;
 		z-index: 1000;
-		display: none;
+		visibility: visible;
+		margin-top:0;
 	}
 
 	h2 {   
