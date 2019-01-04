@@ -111,10 +111,6 @@ body > header nav input[type=checkbox] {
 	display: none;
 }
 
-body > header nav input[type=checkbox]:checked ~ ul {
-	display: none;
-}
-
 .imaMenu{
 	width:  100%;
 	height: 100%;
