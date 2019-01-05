@@ -223,6 +223,8 @@ textarea {
 	margin-bottom: 1%;
 	margin-right: 2%;
 	margin-left: 2%;
+	transition: 0.7s;
+	transition-timing-function: cubic-bezier(.17,.13,.82,1.96);
 }
 
 .menu-accordeon li li {
@@ -313,7 +315,7 @@ textarea {
 }
 
 #equipe article:hover h3 + div {
-	animation: Souligne-hover 2.5s cubic-bezier(1,0.75,0.75,1) normal;
+	animation: Souligne-hover 2.1s cubic-bezier(1,0.75,0.75,1) normal;
 	z-index: 2;
 }
 
