@@ -128,6 +128,10 @@ main {
 
 article {
 	color: black;
+	font-size: calc(35% + 0.25vw + 0.5em);
+	opacity: 0.78;
+	margin-left: 1.75vw;
+	margin-right: 1.75vw;
 }
 
 article:nth-of-type(odd) {
@@ -279,6 +283,9 @@ textarea {
 }
 
 #equipe main section {
+	background-color: rgba(68, 68, 68,0.45);
+	border-radius: 4px 4px 0 0;
+	padding: 15px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -286,7 +293,30 @@ textarea {
 }
 
 #equipe main section article {
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px;
 	max-width: 600px;
+}
+
+#equipe main section article img {
+	border-radius: 50%;
+	padding: 3px;
+	box-shadow: #444 4px;
+}
+
+#equipe article h3 + div {
+	margin-left: 9%;
+	margin-top: -16px;
+	width: 80%;
+	height: 1px;
+	background-color: rgba(68, 68, 68,0.8);
+}
+
+/*  Il est possible de crée un style générale sur tout le site (faire en sorte qu'il s'adapte aussi sur la page produit)  */
+#equipe main section h2{
+	background-color: rgba(158, 164, 164, 0.75);
+	border-radius: 10px 10px 0 0;
 }
 
 /* ################## Fin Page notre équipe ##################*/
@@ -469,7 +499,11 @@ textarea {
 }
 
 #faq section > ul li:nth-child(even){
-	opacity: 0.85;;
+	opacity: 0.85;
+}
+
+#faq section > ul li:nth-child(odd){
+	opacity: 0.8;
 }
 
 .reponse-faq li ol li {
