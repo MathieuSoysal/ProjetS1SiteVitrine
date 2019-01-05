@@ -302,15 +302,30 @@ textarea {
 #equipe main section article img {
 	border-radius: 50%;
 	padding: 3px;
-	box-shadow: #444 4px;
 }
 
 #equipe article h3 + div {
 	margin-left: 9%;
 	margin-top: -16px;
-	width: 80%;
 	height: 1px;
 	background-color: rgba(68, 68, 68,0.8);
+	width: 80%;
+}
+
+#equipe article:hover h3 + div {
+	animation: Souligne-hover 2.5s cubic-bezier(1,0.75,0.75,1) normal;
+	z-index: 2;
+}
+
+#equipe article:hover p {
+	transition: 0.75s;
+}
+
+@keyframes Souligne-hover{
+	0%{width: 80%;margin-left: 9%;}
+	50%{width: 0;margin-left: calc(9% + 80%);}
+	51%{margin-left: 9%;}
+	100%{width: 80%;}
 }
 
 /*  Il est possible de crée un style générale sur tout le site (faire en sorte qu'il s'adapte aussi sur la page produit)  */
