@@ -573,7 +573,7 @@ textarea {
 	}
 
 	body > header nav input + ul{
-		margin-top:-100%;
+		margin-top:-120%;
 		transition-property:margin-top; 
 		transition-duration: 0.8s;
 	}
