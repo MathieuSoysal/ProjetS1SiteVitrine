@@ -572,16 +572,40 @@ textarea {
 		color: cyan;
 	}
 
-	body > header nav ul {
-		visibility: hidden;
-		margin-top:-110%;
+	body > header nav input + ul{
+		margin-top:-100%;
+		transition-property:margin-top; 
+		transition-duration: 0.8s;
 	}
 
-	body > header nav input[type=checkbox]:checked ~ ul, body > header nav ul ul {
-		margin-top:0;
-		transition: 0.1s;
-		z-index: 1000;
+	body > header nav{
+		border-radius: 0 0 10px 10px;
+		transition-property:border-radius; 
+		transition-duration: 0.8s;
+	}
+
+	body > header nav input + ul > li{
+		opacity: 0;
+		visibility: hidden;
+	}
+	
+	body > header nav input[type=checkbox]:checked + ul > li{
+		animation: menu-mobile-clic 1s linear 0s 1 normal;
+		opacity: 1;
 		visibility: visible;
+	}
+
+	body > header nav input[type=checkbox]:checked + ul{
+		transition-property: margin-top;
+		transition: 1s;
+		margin-top: 0;
+	}
+
+	@keyframes menu-mobile-clic {
+		0%{visibility: hidden;opacity: 0}
+		59%{visibility: hidden}
+		60%{visibility: visible;opacity: 0}
+		100%{opacity: 1}
 	}
 
 	h2 {   
