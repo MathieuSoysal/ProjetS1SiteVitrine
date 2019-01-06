@@ -21,12 +21,12 @@ body > header {
 
 body > header:hover{
 	animation: opac-header 0.8s linear 0s 1 normal;
-	opacity: 1;
+	opacity: 0.9;
 }
 
 @keyframes opac-header{
     0% {opacity: 0.75;}
-    100% {opacity: 1;}
+    100% {opacity: 0.9;}
 }
 
 header nav , footer nav  {
@@ -83,7 +83,7 @@ footer nav > ul > li > a {
 body > header a:hover, footer a:hover {
 	transition : 1.1s;
 	color: cyan;
-	background-color: #1e2269;
+	background-color: rgba(30, 34, 105,0.9);
 }
 
 .submenu {
@@ -192,7 +192,7 @@ textarea {
 	color: grey;
 }
 
-.cliquable p:hover{
+.cliquable:hover p{
 	color: black;
 }
 
@@ -215,7 +215,7 @@ textarea {
 }
 
 .menu-accordeon ul {
-	padding:0;
+	padding:inherit;
 }
 
 .menu-accordeon li {
