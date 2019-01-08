@@ -14,39 +14,16 @@ Optionnel:
 
 MATHIEU SOYSAL:
 
-toutes ces polices dans produit sont un peu flashy, non ?
-lit ça https://www.lafabriquedunet.fr/creation-site-vitrine/articles/choisir-police-caracteres-site-web-google-fonts/
-ils parlent des google fonts mais ce qui est important c'est le fait qu'ils conseillent d'utiliser peu de polices (entre 1 et 3),
-d'utiliser des polices lisibles
-
-au niveau des tailles:
-- certains textes de produits deviennent vraiment trop gros
-- si tu veux mettre le texte du header aussi grand, peux tu aussi agrandir celui du footer et le mot "menu" en responsive
-
-sinon, est-ce que la mise en page de produit ne casse pas un peu la charte graphique du site ?
-les polices sont différentes, les cadres, le fond ...
-une charte graphique commune au site entier est un critère d'évaluation
-et puis on vend des voitures haut de gamme, il faut que la mise en page corresponde au type de client.
-C'est bien toi qui m'avais cité apple et microsoft en exemples de mise en forme ?
-
-j'ai remplacé les header que tu avait mis dans produit par une classe intro-Gamme
-
-j'ai enlevé les figure étant donné que nous n'avions aucune légende à mettre
-si vraiment tu en as besoin met un  div avec une classe
-
-j'ai remplacé les </br> par des div
-
-j'ai décalé les h1 et h2 de produit en h2 et h3
 
 avant de faire la fusionn j'avais réglé le problème des images sur produit mais puisque que tu t'occupe de cette page apparemment
 peux-tu t'en occuper ?
 
 Ceci dit, la taille et l'emplacement des éléments va bien en responsive
 mettre les images un coup à droite un coup à gauche c'est pas mal
-tu as bien utilisé les sections
+tu as bien utilisé les sections. Merci <3
 
 Je rappelle juste qu'ils nous poseront des questions sur le code le jour de la présentation,
-je comprends grosso modo ce que tu as fait, mais si il y a une question sur Produit, elle sera pour toi
+je comprends grosso modo ce que tu as fait, mais si il y a une question sur Produit, elle sera pour toi. Je suis ouvert à toute question mais j'ai un peut de mal avec les flex
 
 REDA REGAM:
 
