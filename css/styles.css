@@ -25,8 +25,12 @@ body > header:hover{
 }
 
 @keyframes opac-header{
-    0% {opacity: 0.75;}
-    100% {opacity: 0.9;}
+    0% {
+    	opacity: 0.75;
+    }
+    100% {
+    	opacity: 0.9;
+    }
 }
 
 header nav , footer nav  {
@@ -234,7 +238,7 @@ textarea {
 	background: #444;
 	box-shadow: none;
 	border:none;
-	margin:0
+	margin:0;
 }
 
 .menu-accordeon a {
@@ -243,7 +247,7 @@ textarea {
 	color: white;
 	padding: 8px 0px;
 	font-family: verdana;
-	font-size:1.2em
+	font-size:1.2em;
 }
 
 .menu-accordeon ul li a, #menu-accordeon li:hover li a {
@@ -324,10 +328,20 @@ textarea {
 }
 
 @keyframes Souligne-hover{
-	0%{width: 80%;margin-left: 9%;}
-	50%{width: 0;margin-left: calc(9% + 80%);}
-	51%{margin-left: 9%;}
-	100%{width: 80%;}
+	0%{
+		width: 80%;
+		margin-left: 9%;
+	}
+	50%{
+		width: 0;
+		margin-left: calc(9% + 80%);
+	}
+	51%{
+		margin-left: 9%;
+	}
+	100%{
+		width: 80%;
+	}
 }
 
 /*  Il est possible de crée un style générale sur tout le site (faire en sorte qu'il s'adapte aussi sur la page produit)  */
@@ -394,8 +408,9 @@ textarea {
 }
 
 #produit section header {
-		background-color: rgba(63, 89, 140,0.8);
-		border-radius: inherit;}
+	background-color: rgba(63, 89, 140,0.8);
+	border-radius: inherit;
+}
 
 #produit section header p {
 	font-size: calc(1.5vw + 0.5vh + 0.5em);
@@ -403,18 +418,19 @@ textarea {
 	font-style: italic;
 	opacity: 0.9;
 	margin-left: 0.75vw;
-	margin-right: 0.75vw;}
+	margin-right: 0.75vw;
+}
 
-	#produit  section {  
-		/* Il y a des flex à ajuster */
-					background-color:rgba(63, 89, 140,0.4) ;
-					border-radius: 10px;
-					display: flex;
-					flex-wrap: wrap;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
+#produit  section {  
+/* Il y a des flex à ajuster */
+	background-color:rgba(63, 89, 140,0.4) ;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;				
+	justify-content: center;
+	align-items: center;
+}
 
 #produit section h2 {
 	text-align: center;
@@ -427,20 +443,19 @@ textarea {
 	top: -1px; */
 }
 	
-	#produit section:last-child h3::first-letter, #produit section:first-child + section h3::first-letter{
-		font-size: 1.1em;
-		color: rgba(218, 165, 32,0.95);
-
-	}
+#produit section:last-child h3::first-letter, #produit section:first-child + section h3::first-letter{
+	font-size: 1.1em;
+	color: rgba(218, 165, 32,0.95);
+}
 
 #produit section article h3{
-		font-size:calc(1.5vw + 1.5vh + 0.5em);
-		background-color: rgba(63, 89, 140,0.7);
-		border-radius: 8px;
-		color : rgba(245, 222, 179,0.85);
-		font-family: Calibri, 'Trebuchet MS', sans-serif;
-		text-align: center;
-	}
+	font-size:calc(1.5vw + 1.5vh + 0.5em);
+	background-color: rgba(63, 89, 140,0.7);
+	border-radius: 8px;
+	color : rgba(245, 222, 179,0.85);
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+}
 
 #produit section > article p{
 	font-size: calc(1.5vh + 1vw + 0.5em);
@@ -457,27 +472,36 @@ textarea {
 
 #produit section > article:nth-child(odd) {
 	background-color: rgba(136, 131, 131, 0.9);
-	border-radius: inherit;}
+	border-radius: inherit;
+}
 
 #produit section > article:nth-child(even) {
 	background-color: rgba(188, 189, 193, 0.932);
-	border-radius: inherit}
+	border-radius: inherit;
+}
 
 #produit section > article img {
 	width: calc(7vw + 40vh);
 	height: auto;
 	border: 4px solid rgba(30, 34, 57,0.6) ;
-	border-radius: 4px}
+	border-radius: 4px;
+}
 
 #produit section > article:nth-child(even) img {
-	float: left}
+	float: left;
+}
 
 #produit section > article:nth-child(odd) img {
-	float: right}
+	float: right;
+}
 
   @keyframes opac{
-    0% {opacity: initial;}
-    100% {opacity: 1;}
+    0% {
+    	opacity: initial; /*########## Note pour moi-même #### Variable à initial doit être changer */ 
+    }
+    100% {
+    	opacity: 1;
+    }
   }
 
   @media (max-width: 580px) {
@@ -534,8 +558,12 @@ textarea {
 }
 
 @keyframes target{
-	0%{background-color:rgba(114, 158, 191,1)}
-	100%{background-color:rgba(114, 158, 191,0.5)}
+	0%{
+		background-color:rgba(114, 158, 191,1);
+	}
+	100%{
+		background-color:rgba(114, 158, 191,0.5);
+	}
 }
 
 /* ################## Fin page FAQ ################## */
@@ -602,10 +630,20 @@ textarea {
 	}
 
 	@keyframes menu-mobile-clic {
-		0%{visibility: hidden;opacity: 0}
-		59%{visibility: hidden}
-		60%{visibility: visible;opacity: 0}
-		100%{opacity: 1}
+		0%{
+			visibility: hidden;
+			opacity: 0;
+		}
+		59%{
+			visibility: hidden;
+		}
+		60%{
+			visibility: visible;
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
 	}
 
 	h2 {   
