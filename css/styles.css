@@ -1,5 +1,3 @@
-
-
 @font-face {
 	font-family: "Optima";
 	src: url("./fonts/kurale/kurale-regular.otf");
@@ -585,7 +583,7 @@ textarea {
 	padding: 0;
 }
 
-.reponse-faq > li:nth-child(odd){
+.reponse-faq>li:nth-child(odd) {
 	background-color: #F0F0F0;
 }
 
@@ -665,20 +663,36 @@ textarea {
 
 /* ################## Fin page Presse ################## */
 
+
 /* ################## Début page Contact ################## */
 
-#contact section{
+#contact section {
 	background-color: rgba(179, 178, 178, 0.438);
 	border-radius: 10px;
 	margin: 4px 10px 10px 10px
 }
 
 #contact main,
-#carriere main{
+#carriere main {
 	margin: 0;
 }
 
+.InputAddOn {
+	display: flex;
+}
+
+.InputAddOn-field {
+	flex: 1;
+	/* field styles */
+}
+
+.InputAddOn-item {
+	/* item styles */
+}
+
+
 /* ################## Fin page Contact ################## */
+
 
 /*############## Responsive CSS Général (Header) ############## */
 
@@ -763,4 +777,3 @@ textarea {
 		transform: none;
 	}
 }
-
