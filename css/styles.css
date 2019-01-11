@@ -196,6 +196,14 @@ h1 {
 	font-family: "kurale", "Lucida Sans Unicode", "Arial", "sans-serif";
 	font-size: 40px;
 	color: #1e2239;
+	height: 50px;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+h1 img {
+	height: 100%;
 }
 
 h2 {
