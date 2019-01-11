@@ -16,7 +16,6 @@ body {
 }
 
 body>header {
-	position: -webkit-sticky;
 	position: sticky;
 	width: 100%;
 	top: -1px;
@@ -457,7 +456,7 @@ textarea {
 }
 
 #produit section,
-#produit :not(section:first-child) {
+#produit section :not(:first-child) {
 	margin: 10px;
 }
 
