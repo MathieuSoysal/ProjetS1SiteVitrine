@@ -90,6 +90,23 @@ body > header a:hover, footer a:hover {
 	background-color: rgba(30, 34, 105,0.9);
 }
 
+body > a {
+	height: auto;
+	width: 60px;
+	margin-top:100vh;
+	margin-left: 10px;
+	background-color: rgba(114, 158, 191, 0.61);
+	border-radius: 10px;
+	top: 50vh;
+	z-index: 5;
+	position: sticky;
+}
+
+body > a img{
+	width: 60px;
+	height: 60px;
+}
+
 .submenu {
 	display: flex;
 	position: absolute;
@@ -128,6 +145,7 @@ body > header nav input[type=checkbox] {
 main {
 	display: flex;
 	flex-direction: column;
+	margin-top: calc(-100vh - 70px);
 }
 
 article {
