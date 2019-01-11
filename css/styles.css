@@ -586,9 +586,8 @@ textarea {
 	padding: 0;
 }
 
-.reponse-faq>article:nth-child(even) li {
-	background-color: #727272;
-	color: white;
+.reponse-faq > li:nth-child(odd){
+	background-color: #F0F0F0;
 }
 
 #faq section>ul li:nth-child(even) {
