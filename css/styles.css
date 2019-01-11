@@ -668,18 +668,6 @@ textarea {
 
 /* ################## Début page Contact ################## */
 
-#contact main,
-#carriere main{
-	margin:0;
-}
-
-#contact > a,
-#carriere > a{
-	visibility: hidden;
-	height: 0;
-	margin: 0;
-}
-
 #contact section{
 	background-color: rgba(179, 178, 178, 0.438);
 	border-radius: 10px;
