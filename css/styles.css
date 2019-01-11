@@ -540,18 +540,49 @@ textarea {
 	align-items: center;
 	text-align: center;
 	background-color: #cbd9e4;
+	border-radius: 10px;
+}
+
+#produit section article div{
+	font-size: calc(0.8vh + 0.8vw + 0.5em);
+	width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#produit section article div a{
+	text-decoration: none;
+	background-color: rgba(68, 68, 68, 0.726);
+	color: rgba(255, 255, 255, 0.692);
+	padding: 5px;
+	border-radius: 10px;
+	border : 3px rgba(68, 68, 68, 0) solid;
+	transition: 0.3s;
+}
+
+#produit section article div a:nth-child(2){
+	font-size: calc(1vh + 1vw + 0.2em)
+}
+
+
+#produit section article div a:hover{
+	background-color: rgba(68, 68, 68, 0);
+	color: rgba(68, 68, 68, 0.726);
+	border : 3px rgba(68, 68, 68, 0.726) solid;
 }
 
 #produit section>article img {
 	width: 60vw;
-	max-width: none;
+	max-width: 550px;
 	height: auto;
 	max-height: none;
 	float: initial;
 	border-radius: initial;
 	border: none;
 	padding: initial;
-	margin-bottom: 15vh;
+	margin-top: 4vh;
+	margin-bottom: 8vh;
 }
 
 
