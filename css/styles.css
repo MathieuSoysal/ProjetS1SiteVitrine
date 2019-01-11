@@ -666,6 +666,27 @@ textarea {
 
 /* ################## Fin page Presse ################## */
 
+/* ################## Début page Contact ################## */
+
+#contact main,
+#carriere main{
+	margin:0;
+}
+
+#contact > a,
+#carriere > a{
+	visibility: hidden;
+	height: 0;
+	margin: 0;
+}
+
+#contact section{
+	background-color: rgba(179, 178, 178, 0.438);
+	border-radius: 10px;
+	margin: 4px 10px 10px 10px
+}
+
+/* ################## Fin page Contact ################## */
 
 /*############## Responsive CSS Général (Header) ############## */
 
