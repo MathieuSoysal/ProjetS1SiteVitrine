@@ -44,6 +44,10 @@ footer nav {
 	background-color: #1e2239;
 }
 
+footer {
+	z-index: 1000;
+}
+
 body>header>nav>ul,
 footer>nav>ul {
 	margin: 0;
@@ -109,7 +113,7 @@ body>a {
 	margin-left: 10px;
 	background-color: rgba(114, 158, 191, 0.61);
 	border-radius: 10px;
-	top: 50vh;
+	top: calc(100vh - 80px);
 	z-index: 5;
 	position: sticky;
 }
