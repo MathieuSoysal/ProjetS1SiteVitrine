@@ -1,0 +1,754 @@
+
+
+@font-face {
+	font-family: "Optima";
+	src: url("./fonts/kurale/kurale-regular.otf");
+}
+
+
+/* ############## CSS Général ############## */
+
+body {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+}
+
+body>header {
+	position: sticky;
+	width: 100%;
+	top: -1px;
+	z-index: 1000;
+	opacity: 0.75;
+}
+
+body>header:hover {
+	animation: opac-header 0.8s linear 0s 1 normal;
+	opacity: 0.9;
+}
+
+@keyframes opac-header {
+	0% {
+		opacity: 0.75;
+	}
+	100% {
+		opacity: 0.9;
+	}
+}
+
+header nav,
+footer nav {
+	text-align: center;
+	background-color: #1e2239;
+}
+
+footer {
+	z-index: 1000;
+}
+
+body>header>nav>ul,
+footer>nav>ul {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+body>header nav li,
+footer nav li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+body>header nav>ul>li,
+footer nav>ul>li {
+	float: left;
+	position: relative;
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+body>header a,
+footer a {
+	color: white;
+	text-decoration: none;
+	font-family: Optima, sans-serif;
+	display: inline-block;
+}
+
+.menu-mobile,
+body>header nav>ul>li>a,
+footer nav>ul>li>a {
+	font-size: calc( 1.5vh + 0.7vw + 0.3em);
+}
+
+body>header nav>ul>li>a {
+	padding: 20px 0;
+	align-items: center;
+	flex-grow: 1;
+}
+
+footer nav>ul>li>a {
+	padding: 30px 0;
+	align-items: center;
+	flex-grow: 1;
+}
+
+body>header a:hover,
+footer a:hover {
+	transition: 1.1s;
+	color: cyan;
+	background-color: rgba(30, 34, 105, 0.9);
+}
+
+body>a {
+	height: auto;
+	width: 60px;
+	margin-top: 100vh;
+	margin-left: 10px;
+	background-color: rgba(114, 158, 191, 0.61);
+	border-radius: 10px;
+	top: calc(100vh - 80px);
+	z-index: 5;
+	position: sticky;
+}
+
+body>a img {
+	width: 60px;
+	height: 60px;
+}
+
+.submenu {
+	display: flex;
+	position: absolute;
+	top: 100%;
+	width: 70%;
+	padding: 0;
+	background-color: #1e2239;
+	visibility: hidden;
+	flex-direction: column;
+}
+
+body>header nav li:hover>.submenu {
+	visibility: visible;
+}
+
+body>header nav .submenu a {
+	width: 100%;
+	padding: 10px 0;
+}
+
+.menu-mobile {
+	display: none;
+}
+
+body>header nav input[type=checkbox] {
+	display: none;
+}
+
+.imaMenu {
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	margin-top: calc(-100vh - 70px);
+}
+
+article {
+	color: black;
+	font-size: calc(35% + 0.25vw + 0.5em);
+	opacity: 0.78;
+	margin-left: 1.75vw;
+	margin-right: 1.75vw;
+}
+
+article:nth-of-type(odd) {
+	background-color: #F0F0F0;
+}
+
+article:nth-of-type(even) {
+	background-color: white;
+}
+
+article img {
+	padding: 1%;
+	display: flex;
+	float: left;
+	width: 20%;
+	max-width: 200px;
+}
+
+article div {
+	width: 100%;
+}
+
+h1 {
+	text-align: center;
+	font-family: "kurale", "Lucida Sans Unicode", "Arial", "sans-serif";
+	font-size: 40px;
+	color: #1e2239;
+}
+
+h2 {
+	text-align: center;
+	font-family: "kurale", "Lucida Sans Unicode", "Arial", "sans-serif";
+	padding: 18px 0px;
+	margin: 0;
+}
+
+h3 {
+	font-style: italic;
+	color: black;
+	padding: 1em;
+	margin: 0;
+}
+
+p {
+	text-indent: 20px;
+	padding: 20px 20px;
+	margin: 0;
+	color: black;
+	font-family: Optima, sans-serif;
+}
+
+textarea {
+	height: 45px;
+	width: 40%;
+}
+
+.cliquable p {
+	color: grey;
+}
+
+.cliquable:hover p {
+	color: black;
+}
+
+.cliquable {
+	transition: all .3s ease-in-out;
+	display: flex;
+	flex-direction: row;
+}
+
+.cliquable:hover {
+	transform: scale(1, 1.01);
+	transform-origin: 0 0;
+}
+
+.menu-accordeon {
+	transition: 1s;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.menu-accordeon ul {
+	padding: inherit;
+}
+
+.menu-accordeon li {
+	background-color: #727272;
+	margin-bottom: 1%;
+	margin-right: 2%;
+	margin-left: 2%;
+	transition: 0.7s;
+	transition-timing-function: cubic-bezier(.17, .13, .82, 1.96);
+}
+
+.menu-accordeon li li {
+	max-height: 0;
+	overflow: hidden;
+	border-radius: 0;
+	background: #444;
+	box-shadow: none;
+	border: none;
+	margin: 0;
+}
+
+.menu-accordeon a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 8px 0px;
+	font-family: verdana;
+	font-size: 1.2em;
+}
+
+.menu-accordeon ul li a,
+#menu-accordeon li:hover li a {
+	font-size: 1em
+}
+
+.menu-accordeon li:hover {
+	background: #729EBF
+}
+
+.menu-accordeon li li:hover {
+	background: #999;
+}
+
+.menu-accordeon li:hover li {
+	max-height: 15em;
+}
+
+
+/* ############## Fin CSS Générale ############## */
+
+
+/* ################## Début Page Carrière ##################*/
+
+#carriere header nav ul li a[href="./nousrejoindre.html"] {
+	background-color: rgba(240, 240, 240, 0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+
+/* ################## Fin Page Carrière ##################*/
+
+
+/* ################## Début Page notre équipe ##################*/
+
+#equipe header nav ul li a[href="./equipe.html"] {
+	background-color: rgba(240, 240, 240, 0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+#equipe main section {
+	background-color: rgba(68, 68, 68, 0.45);
+	border-radius: 4px 4px 0 0;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#equipe main section article {
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px;
+	max-width: 600px;
+}
+
+#equipe main section article img {
+	border-radius: 50%;
+	padding: 3px;
+}
+
+#equipe article h3+div {
+	margin-left: 9%;
+	margin-top: -16px;
+	height: 1px;
+	background-color: rgba(68, 68, 68, 0.8);
+	width: 80%;
+}
+
+#equipe article:hover h3+div {
+	animation: Souligne-hover 2.1s cubic-bezier(1, 0.75, 0.75, 1) normal;
+	z-index: 2;
+}
+
+#equipe article:hover p {
+	transition: 0.75s;
+}
+
+@keyframes Souligne-hover {
+	0% {
+		width: 80%;
+		margin-left: 9%;
+	}
+	50% {
+		width: 0;
+		margin-left: calc(9% + 80%);
+	}
+	51% {
+		margin-left: 9%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+
+/*  Il est possible de crée un style générale sur tout le site (faire en sorte qu'il s'adapte aussi sur la page produit)  */
+
+#equipe main section h2 {
+	background-color: rgba(158, 164, 164, 0.75);
+	border-radius: 10px 10px 0 0;
+}
+
+
+/* ################## Fin Page notre équipe ##################*/
+
+
+/* ################## Début Page produit ##################*/
+
+#produit header nav ul li a[href="./produit.html"] {
+	background-color: rgba(240, 240, 240, 0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+@keyframes Header-page {
+	0% {
+		margin-top: -10vh
+	}
+	100% {
+		margin-top: 0
+	}
+}
+
+@font-face {
+	font-family: "remarcle";
+	src: url("./fonts/remarcle/Remarcle.ttf");
+}
+
+
+/* Le font créé des problèmes avec le responsive il faut régler le changement des chiffre en mot  */
+
+
+/* J'ai réglé le problème sur pas mal de tailles de width possibles, il ne reste plus que ceux qui sont entre 580 et 680, l'image devient trop grande */
+
+#produit section:last-child h2,
+#produit section:last-child h3 {
+	font-family: remarcle, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@font-face {
+	font-family: "Dodge";
+	src: url("./fonts/dodge2/Dodgv2.ttf")
+}
+
+#produit section:first-child h2,
+#produit section:first-child h3 {
+	font-family: Dodge, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@font-face {
+	font-family: "FastOne";
+	src: url("./fonts/faster_one/FasterOne-Regular.ttf")
+}
+
+#produit section:first-child+section h2,
+#produit section:first-child+section h3 {
+	font-family: FastOne, Georgia, Times, 'Times New Roman', serif;
+}
+
+#produit {
+	background-image: url("./fonts/font-nuage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#produit main > section,
+#produit main > :not(:first-child) {
+	margin: 10px;
+}
+
+#produit section header {
+	background-color: rgba(121, 129, 146, 0.8);
+	border-radius: inherit;
+}
+
+#produit section header p {
+	font-size: calc(1vw + 0.5vh + 0.5em);
+	text-align: justify;
+	font-style: italic;
+	opacity: 0.9;
+	margin-left: 0.75vw;
+	margin-right: 0.75vw;
+}
+
+#produit section {
+	/* Il y a des flex à ajuster */
+	background-color: rgba(63, 89, 140, 0.4);
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition : 0.5;
+}
+
+#produit section h2 {
+	text-align: center;
+	font-size: calc(1.5vw + 1vh + 1em);
+	color: goldenrod;
+	background-color: #3F598C;
+	border-radius: 8px;
+	/* position: sticky;      manque de documentation sur la balise Sticky
+	width: 99%;
+	top: -1px; */
+}
+
+#produit section:last-child h3::first-letter,
+#produit section:nth-child(2) h3::first-letter {
+	font-size: 1.1em;
+	color: rgba(218, 165, 32, 0.95);
+}
+
+#produit section article h3 {
+	font-size: calc(1.5vw + 1vh + 0.5em);
+	background-color: rgba(63, 89, 140, 0.7);
+	border-radius: 8px;
+	color: rgba(245, 222, 179, 0.85);
+	font-family: Calibri, 'Trebuchet MS', sans-serif;
+	text-align: center;
+}
+
+#produit section>article p {
+	font-size: calc(1.5vh + 1vw + 0.5em);
+	text-align: center;
+	opacity: 0.78;
+	margin-left: 1.75vw;
+	margin-right: 1.75vw;
+}
+
+#produit section article {
+	margin: 10px;
+	width: 80vw;
+	background: linear-gradient(#b8c6d1,#c1d5e0,#7f94a5,#6f8495);
+	opacity: 1;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #cbd9e4;
+}
+
+#produit section>article img {
+	width: 60vw;
+	max-width: none;
+	height: auto;
+	max-height: none;
+	float: initial;
+	border-radius: initial;
+	border: none;
+	padding: initial;
+	margin-bottom: 15vh;
+}
+
+
+@media (max-width: 580px) {
+	#produit section>article img {
+		width: 85%;
+		height: initial;
+	}
+}
+
+
+/*################## Fin page Produit ##################*/
+
+
+/* ################## Début page FAQ ################## */
+
+#faq header nav ul li a[href="./faq.html"] {
+	background-color: rgba(240, 240, 240, 0.3);
+	color: #1e2239;
+	animation: Header-page 0.5s linear 0s 1 normal;
+	border-radius: 0 0 15px 15px;
+}
+
+.reponse-faq {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.reponse-faq > li:nth-child(odd){
+	background-color: #F0F0F0;
+}
+
+#faq section>ul li:nth-child(even) {
+	opacity: 0.85;
+}
+
+#faq section>ul li:nth-child(odd) {
+	opacity: 0.8;
+}
+
+.reponse-faq li ol li {
+	padding: 5px 0 20px 0;
+}
+
+#faq li:target {
+	border-radius: 15px;
+	background-color: rgba(114, 158, 191, 1);
+	animation: target 1s linear 0s 4 alternate;
+}
+
+@keyframes target {
+	0% {
+		background-color: rgba(114, 158, 191, 1);
+	}
+	100% {
+		background-color: rgba(114, 158, 191, 0.5);
+	}
+}
+
+
+/* ################## Fin page FAQ ################## */
+
+
+/* ################## Début page Presse ################## */
+
+#presse article img {
+	width: 40vw;
+	height: auto;
+	max-width: 400px;
+	float: none;
+}
+
+#presse article:nth-child(odd) img {
+	transform: rotate(3deg);
+}
+
+#presse article:nth-child(even) img {
+	transform: rotate(-3deg);
+}
+
+#presse article figure {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#presse section header p {
+	text-align: center;
+	font-size: calc(1vw + 0.4vh + 0.5em);
+	font-style: italic;
+	opacity: 0.9;
+	margin-left: 0.75vw;
+	margin-right: 0.75vw;
+}
+
+#presse section>article p {
+	font-size: calc(1vh + 0.5vw + 0.5em);
+	text-align: center;
+	opacity: 0.78;
+	margin-left: 1.75vw;
+	margin-right: 1.75vw;
+}
+
+
+/* ################## Fin page Presse ################## */
+
+/* ################## Début page Contact ################## */
+
+#contact section{
+	background-color: rgba(179, 178, 178, 0.438);
+	border-radius: 10px;
+	margin: 4px 10px 10px 10px
+}
+
+#contact main,
+#carriere main{
+	margin: 0;
+}
+
+/* ################## Fin page Contact ################## */
+
+/*############## Responsive CSS Général (Header) ############## */
+
+@media (max-width: 768px) {
+	.menu-mobile {
+		display: block;
+		text-align: center;
+		padding: 15px 0px;
+		background-color: #3F598C;
+		z-index: 1000;
+	}
+	body>header nav li,
+	body>header nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	body>header nav li:hover .submenu {
+		width: 100%;
+		position: static;
+	}
+	body>header nav label {
+		color: white;
+		text-decoration: none;
+		font-family: Optima, sans-serif;
+	}
+	body>header nav label:hover {
+		transition: 1.1s;
+		color: cyan;
+	}
+	body>header nav input+ul {
+		margin-top: -120%;
+		transition-property: margin-top;
+		transition-duration: 0.8s;
+	}
+	body>header nav {
+		border-radius: 0 0 10px 10px;
+		transition-property: border-radius;
+		transition-duration: 0.8s;
+	}
+	body>header nav input+ul>li {
+		opacity: 0;
+		visibility: hidden;
+	}
+	body>header nav input[type=checkbox]:checked+ul>li {
+		animation: menu-mobile-clic 1s linear 0s 1 normal;
+		opacity: 1;
+		visibility: visible;
+	}
+	body>header nav input[type=checkbox]:checked+ul {
+		transition-property: margin-top;
+		transition: 1s;
+		margin-top: 0;
+	}
+	@keyframes menu-mobile-clic {
+		0% {
+			visibility: hidden;
+			opacity: 0;
+		}
+		59% {
+			visibility: hidden;
+		}
+		60% {
+			visibility: visible;
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	h2 {
+		padding: 10px 0px;
+		margin: 0;
+	}
+	h3 {
+		text-align: center;
+	}
+	p {
+		text-indent: 10px;
+		padding: 10px 10px;
+	}
+	.cliquable:hover {
+		transform: none;
+	}
+}
+
