@@ -513,15 +513,6 @@ textarea {
 	float: right;
 }
 
-  @keyframes opac{
-    0% {
-    	opacity: initial; /*########## Note pour moi-même #### Variable à initial doit être changer */ 
-    }
-    100% {
-    	opacity: 1;
-    }
-  }
-
   @media (max-width: 580px) {
 
 	#produit section > article img {
@@ -585,6 +576,50 @@ textarea {
 }
 
 /* ################## Fin page FAQ ################## */
+
+/* ################## Début page Presse ################## */
+
+#presse article img{
+	width: 40vw;
+	height: auto;
+	max-width: 400px;
+	float: none;
+}
+
+#presse article:nth-child(odd) img {
+	transform: rotate(3deg);
+}
+
+#presse article:nth-child(even) img {
+	transform: rotate(-3deg);
+}
+
+#presse article figure {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;				
+	justify-content: center;
+	align-items: center;
+}
+
+#presse section header p {
+	text-align: center;
+	font-size: calc(1vw + 0.4vh + 0.5em);
+	font-style: italic;
+	opacity: 0.9;
+	margin-left: 0.75vw;
+	margin-right: 0.75vw;
+}
+
+#presse section > article p{
+	font-size: calc(1vh + 0.5vw + 0.5em);
+	text-align: center;
+	opacity: 0.78;
+	margin-left: 1.75vw;
+	margin-right: 1.75vw;
+}
+
+/* ################## Fin page Presse ################## */
 
 /*############## Responsive CSS Général (Header) ############## */
 
